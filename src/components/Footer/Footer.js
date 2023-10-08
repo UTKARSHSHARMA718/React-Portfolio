@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GTIHUB_PROFILE_URL, HASHNODE_PROFILE_URL, INSTAGRAM_PROFILE_URL, LINKEDIN_PROFILE_URL, TWITTER_PROFILE_URL } from "../Constants/Const";
+import { GTIHUB_PROFILE_URL, HASHNODE_PROFILE_URL, INSTAGRAM_PROFILE_URL, LINKEDIN_PROFILE_URL, TWITTER_PROFILE_URL } from "../../Constants/Const";
 import {
   faGithub,
   faTwitter,

@@ -1,19 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Yeseva+One&display=swap');
 
-.PP {
-  /* margin-top: 20px; */
-  margin: 0px;
-  width: 245px;
+#profilePic {
   height: 250px;
-  border-radius: 51%;
-  
-  /* CSS to show img in the mid */
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  
-  
 }
+
 .ppContainer{
   background-color: white;
   margin-top: 20px;

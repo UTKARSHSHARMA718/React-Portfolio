@@ -8,15 +8,15 @@ h6 {
 }
 
 #footer {
-  position: absolute;
   bottom: 0;
   height: 60px;
   width: 100%;
   color: chartreuse;
   text-align: center;
-  background-color: rgb(59 58 58 / 51%);
+  background-color: rgb(255 255 255 / 7%);
   backdrop-filter: blur(4px);
-  box-shadow: 0 0 2px 1px rgb(59 58 58 / 70%);
+  box-shadow: 0 0 2px 1px rgb(255 255 255 / 7%);
+  margin-top: auto; /* for making footer stick to the bottom. */
 }
 
 #footer a {

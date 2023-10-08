@@ -1,12 +1,14 @@
 import React from "react";
 
+import "./BlogCardStyles.css";
+
 const WORDS_TO_CHARACTER = 135;
 
 const BlogCard = ({ post }) => {
   const { slug, title, brief, coverImage } = post;
   return (
     <a href={`https://supercomputing.hashnode.dev/${slug}`}>
-      <div className="card cardSize" style={{ backgroundColor: "black" }}>
+      <div className="card" id="cardSize" style={{ backgroundColor: "black" }}>
         <div id="imgCard"></div>
         <img src={coverImage} className="card-img-top" id="images" alt="..." />
         <div className="card-body">
