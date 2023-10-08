@@ -1,0 +1,53 @@
+
+
+.welcome{
+  min-height: 100vh;
+}
+
+
+.introduction{
+	font-size: 5rem;
+}
+#one{
+margin-right: 46rem;
+}
+#two{
+margin-right: 15rem;
+}
+.content{
+	 text-align:center;
+	margin-top: 10rem; 
+  
+	
+}
+.introduction{
+  text-transform:uppercase;
+	font-size:5rem;
+	font-family:'Verdana';
+	/* padding:30px; */
+}
+@media only screen and (max-width:768px){
+
+    /* for mobile phones */
+  .socials{
+    padding-right: 4px;
+  }
+  .introduction{
+    font-size: 2rem;
+    margin-top: 2rem;
+    
+  }
+  
+  #one{
+    margin-right: 0rem;
+    }
+    #two{
+      margin-right: 0rem;
+      }
+  .content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

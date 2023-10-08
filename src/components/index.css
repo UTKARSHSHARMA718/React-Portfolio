@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(16, 16, 16);
+    min-height: 100vh;
+}
+
+
+.socials{
+    align-items: center;
+    padding-right:20px ;
+}
+.me{
+    width: 700px;
+    height: 700px;
+  margin-left: 30%;
+}
+
+.containerNav{
+width: 100%px;
+}
+
+#introPageHeading{
+    margin-top: auto;
+    margin-bottom: auto;
+}

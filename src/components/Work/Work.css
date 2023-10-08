@@ -1,0 +1,109 @@
+.workcard {
+  width: 19rem;
+  height: 370px;
+
+}
+.card{
+  overflow: hidden;
+  background-color: rgb(111, 175, 231);
+  border:4px solid ;
+  border-radius: 23px;
+  border-color: greenyellow;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.card-title{
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  text-shadow:4px 3px 10px black;
+}
+.card-text{
+  font-weight: bold;
+  text-align: center;
+}
+/* .card:hover{
+
+  
+  
+} */
+.card:hover,
+.card:focus,
+.card:active {
+  /* box shadow */
+  -webkit-box-shadow: 1px 5px 24px -1px rgb(120, 251, 120);
+  -moz-box-shadow: 1px 5px 24px -1px rgb(120, 251, 120);
+  box-shadow: 1px 1px 20px -1px rgb(120, 251, 120);
+  transform: scale(1.1);
+}
+.imgWork {
+  width: 310px;
+  height: 165px;
+}
+body {
+  background-color: black;
+}
+
+.workButton {
+  position: absolute;
+  bottom: -0.5rem;
+  width: 15rem;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: greenyellow;
+  margin-bottom: 1rem;
+}
+h5 {
+  color: rgb(51, 255, 0);
+}
+h2 {
+  text-align: center;
+  color: rgb(241, 38, 241);
+  text-shadow:2px 2px 21px rgb(255, 183, 255);
+}
+h1 {
+  color: greenyellow;
+}
+
+.hcj{
+  background-color: crimson;
+}
+
+@media (max-width:768px){
+
+  .workcard{
+    width: 18rem;
+    height: 391px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  .move-down-pro{
+  margin-top: 60px;
+  }
+  .move-down-react{
+  margin-top: 20px;
+  }
+
+  .card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .workButton{
+    width: 15rem;
+    margin-bottom: 3rem;
+  }
+}

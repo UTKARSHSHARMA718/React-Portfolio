@@ -1,0 +1,156 @@
+.BackButton {
+  display: block;
+  position:relative;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: greenyellow;
+  color: black;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border-color: rgb(98, 236, 55);
+  margin-top: 50vh;
+  margin-bottom: 2rem;
+}
+button:hover {
+  border-color: purple;
+}
+.info {
+  width: 55rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#thumbnail {
+  border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb;
+  height: 19rem;
+  max-height: 22rem;
+  max-width: 22rem;
+}
+
+.frame {
+  background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 2px 11px 2px rgb(108, 228, 11);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 10vh 10vw;
+  height: 48vh;
+  padding: 2vmin;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  text-align: center;
+  &:before {
+    border-radius: 2px;
+    bottom: -2vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+    content: "";
+    left: -2vmin;
+    position: absolute;
+    right: -2vmin;
+    top: -2vmin;
+  }
+  &:after {
+    border-radius: 2px;
+    bottom: -2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    content: "";
+    left: -2.5vmin;
+    position: absolute;
+    right: -2.5vmin;
+    top: -2.5vmin;
+  }
+}
+
+#categories{
+    text-align: left;
+}
+#previewLink{
+  margin-right: 80%;
+}
+
+
+@media (max-width:768px){
+  
+  #previewLink{
+   margin-right: 2rem;
+    margin-left: -2rem;
+  } 
+  .bookscard{
+    margin-left: auto;
+    margin-right: auto;
+    width: 14rem;
+    height: 17rem;
+
+    
+  }
+  .cardIMG{
+    width: 14rem;
+    height: 14rem;
+  }
+  #thumbnail {
+    
+    height: 17rem;
+    width: 14rem;
+    
+  }
+  .frame{
+    height: 21rem;
+    width: 18rem;
+    display: block;
+    margin-left: -3rem;
+  }
+ 
+  #book-desc{
+    width: 21rem;
+    font-weight: bold;
+    margin-left: -4rem;
+  }
+  #categories{
+    text-align: left;
+    margin-left: -2rem;
+    font-size: 1.3rem;
+  }
+  #book-title {
+    left: 0px;
+    width: 17rem;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: -3rem;
+}
+#authors{
+  width: 18rem;
+  font-size: 18px;
+    margin-bottom: 2rem;
+    margin-left: -3rem;
+}
+
+  .info {
+    width: 12rem;
+    
+  }
+  .buyLinka{
+    display: block;
+    margin-left: -7rem;
+  }
+  #CPB{
+    width: 10rem;
+    margin: auto;
+  }
+  .BackButton{
+    margin-top: 2rem;
+  }
+}
