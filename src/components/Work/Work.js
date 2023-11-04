@@ -1,42 +1,16 @@
 import React from "react";
+import Particles from "react-tsparticles";
 
 import "./Work.css";
-import mosnter from "./images/Monsternews.PNG";
-import wheather from "./images/wheather api app.PNG";
-import textMani from "./images/text-manipulator.PNG";
-import Random from "./images/Backgound changer.PNG";
-import Currency from "./images/currency converter.PNG";
-import spanish from "./images/spanish.PNG";
-import luck from "./images/dice game.PNG";
-import profile from "./images/profile pic taker.PNG";
-import netflix from "./images/netflix.webp";
-import cross from "./images/cross.jpg";
-import pp from "./images/profile.png";
-import indiga from "./images/indiga.PNG";
-import tyson from "./images/tyson.PNG";
-import site from "./images/my site.PNG";
-import easyH from "./images/holidays easy image.png";
-
-import quiz from "./images/quiz a.PNG";
-import todoi from "./images/quiz.PNG";
-import sav from "./images/sav.PNG";
-import notebook from "./images/notebook.PNG";
-import social from "./images/social.jpeg";
-
-import Particles from "react-tsparticles";
-import { motion } from "framer-motion";
 
 const Work = (props) => {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
-      >
-        <h1 className="move-down-pro">My Projects</h1>
-        <h2 className="move-down-react">HTML CSS JAVASCRIPT</h2>
+      <div>
+        <div className="">
+          <h1 className="move-down-pro">My Projects</h1>
+          <h2 className="move-down-react">HTML CSS JAVASCRIPT</h2>
+        </div>
         <div className="card workcard">
           <img
             src={sav}
@@ -117,6 +91,9 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
+
+
         <h2 className="move-down-react">React JS</h2>
         <div className="card workcard">
           <img
@@ -247,7 +224,9 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <h2>React-Native</h2>
+
         <div className="card workcard">
           <img
             src={Random}
@@ -268,6 +247,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <div className="card workcard">
           <img
             src={Currency}
@@ -288,6 +268,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <div className="card workcard">
           <img
             src={spanish}
@@ -305,6 +286,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <div className="card workcard">
           <img
             src={luck}
@@ -344,6 +326,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <div className="card workcard">
           <img
             src={netflix}
@@ -363,6 +346,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <div className="card workcard">
           <img
             src={pp}
@@ -382,6 +366,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+
         <div className="card workcard">
           <img
             src={cross}
@@ -401,6 +386,7 @@ const Work = (props) => {
             </a>
           </div>
         </div>
+        
         <div className="card workcard">
           <img
             src={social}
@@ -427,7 +413,7 @@ const Work = (props) => {
           loaded={props.particlesLoaded}
           options={props.particlesOptions}
         />
-      </motion.div>
+      </div>
     </>
   );
 };

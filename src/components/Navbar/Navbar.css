@@ -74,6 +74,17 @@ input {
   backdrop-filter: blur(4px);
   box-shadow: 0 0 2px 1px rgb(255 255 255 / 7%);
   padding: 5px 20px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.on-navbar-sticking {
+  background-color: #4ce93721;
+}
+
+.containerNav {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
 }
 
 .navLinks {
