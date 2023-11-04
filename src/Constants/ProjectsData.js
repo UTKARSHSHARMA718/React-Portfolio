@@ -1,30 +1,30 @@
-import monster from "./images/Monsternews.PNG";
-import wheather from "./images/wheather api app.PNG";
-import textMani from "./images/text-manipulator.PNG";
-import Random from "./images/Backgound changer.PNG";
-import Currency from "./images/currency converter.PNG";
-import spanish from "./images/spanish.PNG";
-import luck from "./images/dice game.PNG";
-import profile from "./images/profile pic taker.PNG";
-import netflix from "./images/netflix.webp";
-import cross from "./images/cross.jpg";
-import profilePic from "./images/profile.png";
-import indiga from "./images/indiga.PNG";
-import tyson from "./images/tyson.PNG";
-import site from "./images/my site.PNG";
-import holidayEasy from "./images/holidays easy image.png";
-import sav from "./images/sav.PNG";
-import quiz from "./images/quiz a.PNG";
-import todoi from "./images/quiz.PNG";
-import sav from "./images/sav.PNG";
-import notebook from "./images/notebook.PNG";
-import social from "./images/social.jpeg";
+import monster from "../Assets/Work related assets/images/Monsternews.PNG";
+import wheather from "../Assets/Work related assets/images/wheather api app.PNG";
+import textMani from "../Assets/Work related assets/images/text-manipulator.PNG";
+import Random from "../Assets/Work related assets/images/Backgound changer.PNG";
+import Currency from "../Assets/Work related assets/images/currency converter.PNG";
+import spanish from "../Assets/Work related assets/images/spanish.PNG";
+import luck from "../Assets/Work related assets/images/dice game.PNG";
+import profile from "../Assets/Work related assets/images/profile pic taker.PNG";
+import netflix from "../Assets/Work related assets/images/netflix.webp";
+import cross from "../Assets/Work related assets/images/cross.jpg";
+import profilePic from "../Assets/Work related assets/images/profile.png";
+import indiga from "../Assets/Work related assets/images/indiga.PNG";
+import tyson from "../Assets/Work related assets/images/tyson.PNG";
+import site from "../Assets/Work related assets/images/my site.PNG";
+import holidayEasy from "../Assets/Work related assets/images/holidays easy image.png";
+import quiz from "../Assets/Work related assets/images/quiz a.PNG";
+import todoi from "../Assets/Work related assets/images/quiz.PNG";
+import sav from "../Assets/Work related assets/images/sav.PNG";
+import notebook from "../Assets/Work related assets/images/notebook.PNG";
+import social from "../Assets/Work related assets/images/social.jpeg";
 
 export const PROJECT_DATA_HTML_CSS_JAVASCRIPT = [
   {
     name: "Sorting Algorithms Visualiser",
     description:
       "Sorting Algorithms Visualiser help in visualising the internal working of the sorting algorithms",
+    isDescriptionComplete: false,
     viewLink: "https://sorting-algorithms-visualisers.netlify.app/",
     imgLink: sav,
   },
@@ -32,6 +32,7 @@ export const PROJECT_DATA_HTML_CSS_JAVASCRIPT = [
     name: "GYM Site",
     description:
       "It's a basic gym site sign-up page, which allows the user to register itself for the mike tyson gym membership",
+    isDescriptionComplete: true,
     viewLink: "https://utkarshsharma718.github.io/Gym-site/",
     imgLink: tyson,
   },
@@ -39,13 +40,15 @@ export const PROJECT_DATA_HTML_CSS_JAVASCRIPT = [
     name: "MANGA Selling store",
     description:
       "It's india's one the first online manga selling and renting store.",
+    isDescriptionComplete: true,
     viewLink: "https://utkarshsharma718.github.io/Manga-Store/",
     imgLink: indiga,
   },
   {
     name: "Todo List",
     description:
-      "It's an web app which allows you to make a list of all list to-do task",
+      "It's an web app which allows you to make a list of all list to-do task.",
+    isDescriptionComplete: true,
     viewLink: "https://sorting-algorithms-visualisers.netlify.app/",
     imgLink: todoi,
   },
@@ -66,7 +69,7 @@ export const PROJECT_DATA_REACTJS = [
       "Cloud Notebook is an MERN Stack based application which provide many functionality such as sign-in, sign-out",
     isDescriptionComplete: false,
     viewLink: "https://cloud-notebook.netlify.app/",
-    imgLink: monster,
+    imgLink: notebook,
   },
   {
     name: "Quiz app",
@@ -98,7 +101,7 @@ export const PROJECT_DATA_REACTJS = [
       "It is a MERN stack application which allows user to book an hotel,restaurent,",
     isDescriptionComplete: false,
     viewLink: "https://textmanipulator.herokuapp.com/",
-    imgLink: holidayEasy,
+    imgLink: textMani,
   },
   {
     name: "Holiday Easy",
@@ -106,7 +109,7 @@ export const PROJECT_DATA_REACTJS = [
       "It's an custom made portfolio site which allows you to show you skill, work, experience,",
     isDescriptionComplete: false,
     viewLink: "https://github.com/UTKARSHSHARMA718/Reservator",
-    imgLink: site,
+    imgLink: holidayEasy,
   },
 ];
 
@@ -139,16 +142,16 @@ export const PROJECT_DATA_REACT_NATIVE = [
     name: "Game of Luck",
     description: " A game that checks the credibility of your luck.",
     isDescriptionComplete: true,
-    viewLink: "https://github.com/UTKARSHSHARMA718/MonsterNews",
+    viewLink: "https://github.com/UTKARSHSHARMA718/Game-Of-Luck",
     imgLink: luck,
   },
-  {
-    name: "Profile Pic Taker",
-    description: "Take a new fresh profile pic with Profile Pic Taker.",
-    isDescriptionComplete: true,
-    viewLink: "https://github.com/UTKARSHSHARMA718/Game-Of-Luck",
-    imgLink: profile,
-  },
+//   { //Not having correct view link as of now but will update later.
+//     name: "Profile Pic Taker",
+//     description: "Take a new fresh profile pic with Profile Pic Taker.",
+//     isDescriptionComplete: true,
+//     viewLink: "https://github.com/UTKARSHSHARMA718/Game-Of-Luck",
+//     imgLink: profile,
+//   },
   {
     name: "Netflix Store",
     description:

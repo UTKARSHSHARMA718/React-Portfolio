@@ -1,12 +1,11 @@
 .workcard {
   width: 19rem;
   height: 370px;
-
 }
-.card{
+.card {
   overflow: hidden;
   background-color: rgb(111, 175, 231);
-  border:4px solid ;
+  border: 4px solid;
   border-radius: 23px;
   border-color: greenyellow;
   display: inline-block;
@@ -21,13 +20,13 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.card-title{
+.card-title {
   text-align: center;
   font-size: 19px;
   font-weight: bold;
-  text-shadow:4px 3px 10px black;
+  text-shadow: 4px 3px 10px black;
 }
-.card-text{
+.card-text {
   font-weight: bold;
   text-align: center;
 }
@@ -63,7 +62,7 @@ body {
   margin-right: auto;
   background-color: greenyellow;
   margin-bottom: 1rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 h5 {
   color: rgb(51, 255, 0);
@@ -71,19 +70,18 @@ h5 {
 h2 {
   text-align: center;
   color: rgb(241, 38, 241);
-  text-shadow:2px 2px 21px rgb(255, 183, 255);
+  text-shadow: 2px 2px 21px rgb(255, 183, 255);
 }
 h1 {
   color: greenyellow;
 }
 
-.hcj{
+.hcj {
   background-color: crimson;
 }
 
-@media (max-width:768px){
-
-  .workcard{
+@media (max-width: 768px) {
+  .workcard {
     width: 18rem;
     height: 391px;
     display: block;
@@ -91,19 +89,19 @@ h1 {
     margin-right: auto;
     margin-bottom: 2rem;
   }
-  .move-down-pro{
-  margin-top: 60px;
+  .move-down-pro {
+    margin-top: 60px;
   }
-  .move-down-react{
-  margin-top: 20px;
+  .move-down-react {
+    margin-top: 20px;
   }
 
-  .card{
+  .card {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .workButton{
+  .workButton {
     width: 15rem;
     margin-bottom: 3rem;
   }

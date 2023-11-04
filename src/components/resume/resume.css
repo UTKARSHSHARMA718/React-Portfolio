@@ -9,15 +9,18 @@
 .downloadButton {
   text-align: center;
   background-color: rgb(53, 49, 50);
-  height: 32px;
   width: 161px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   margin-bottom: 20px;
-  border-radius: 7px;
-  padding-top: 5px;
+  border-radius: 8px;
   box-shadow: 1px 1px 10px greenyellow;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: auto;
+  padding: 8px;
 }
 
 /* Animation property */

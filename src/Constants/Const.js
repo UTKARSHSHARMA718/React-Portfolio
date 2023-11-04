@@ -10,3 +10,8 @@ export const TWITTER_PROFILE_URL =
 //API
 export const HASHNODE_API = "https://api.hashnode.com";
 
+export const apiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
+
+export const googleBooksApi = "https://www.googleapis.com/books/v1/volumes?q=";
+
+export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";

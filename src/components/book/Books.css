@@ -1,40 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Spectral:wght@200&family=Yeseva+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Spectral:wght@200&family=Yeseva+One&display=swap');
-
-
-p{
-    font-family: 'Cinzel', serif;
-    margin-top: -5px;
+p {
+  font-family: "Cinzel", serif;
+  margin-top: -5px;
 }
 
-body{
-    background-color: white;
-    
+body {
+  background-color: white;
 }
-.bookscard{
-    display: inline-block;
-    margin: 20px;
-    width: 290px;
-    height: 392px;
-    border: 3px solid greenyellow;
+.bookscard {
+  display: inline-block;
+  margin: 20px;
+  width: 240px;
+  height: 300px;
+  border: 3px solid greenyellow;
 }
-.cardIMG{
-    width: 100%;
-    height: 320px;
+.cardIMG {
+  width: 100%;
+  height: 88%;
 }
-h1{
-    text-align: center;
-    color: rgb(248, 198, 198);
+h1 {
+  text-align: center;
+  color: rgb(248, 198, 198);
+}
+.books-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12%;
+  max-width: 100%;
+  padding: 0px 12px;
+}
+.book-name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-@media(max-width:768px) {
-    .cardIMG{
-        width: 15rem;
-        height: 14rem;
-    }
-    .bookscard {
-        width: 15rem;
-        height: 19rem;
-       
-    }
+@media (max-width: 768px) {
+  .cardIMG {
+    width: 15rem;
+    height: 14rem;
+  }
+  .bookscard {
+    width: 15rem;
+    height: 19rem;
+  }
 }

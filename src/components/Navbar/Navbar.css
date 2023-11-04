@@ -80,8 +80,10 @@ input {
 .on-navbar-sticking {
   background-color: #4ce93721;
 }
-
-.containerNav {
+.containerNav{
+  transition: all ease-in-out 1s;
+}
+.stick-to-top {
   position: sticky;
   top: 0px;
   z-index: 1000;

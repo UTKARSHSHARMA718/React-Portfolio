@@ -1,4 +1,6 @@
 import { React, useEffect, useRef, useState } from "react";
+
+import useScrollDirection from "../../customHooks/useScrollDirection";
 import imgUrl from "../../Assets/Images/1.png";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
@@ -9,6 +11,7 @@ const Navbar = () => {
   const path = useLocation();
   const scrollWatcherRef = useRef();
   const currentPage = path?.pathname?.slice(1);
+  const { scrollingDirection } = useScrollDirection();
 
   const handleClickMobile = () => {
     setMobile(!mobile);
@@ -30,7 +33,11 @@ const Navbar = () => {
   return (
     <>
       <div data-scroll-watcher ref={scrollWatcherRef}></div>
-      <div className="containerNav">
+      <div
+        className={`containerNav ${
+          scrollingDirection === -1 ? "stick-to-top" : ""
+        }`}
+      >
         <div
           className={
             mobile
