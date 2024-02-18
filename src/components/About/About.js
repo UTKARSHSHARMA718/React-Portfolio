@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Particles from "react-tsparticles";
 import profilePic from "../../Assets/Images/Profile Pic LinkedIn with infinity.jpg";
 import { motion } from "framer-motion";
-import "./About.css";
+import styles from "./About.module.css";
 
 const About = (props) => {
   return (
@@ -13,13 +13,17 @@ const About = (props) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <div className="container">
-        <h1 className="heading">About Me</h1>
-        <div className="containerAbout">
-          <div className="ppContainer">
-            <img id="profilePic" src={profilePic} alt="profile-pic" />
+      <div className={styles.container}>
+        <h1 className={styles.heading}>About Me</h1>
+        <div className={styles.containerAbout}>
+          <div className={styles.ppContainer}>
+            <img
+              className={styles.profilePic}
+              src={profilePic}
+              alt="profile-pic"
+            />
           </div>
-          <p className="description">
+          <p className={styles.description}>
             Hi, Nice to meet you I'm Utkarsh Sharma, a 22 year-old web & app
             developer ,who also have interest in Graphic designing and video
             editing.Currently pursuing Bachelors in Information technology from
@@ -27,9 +31,9 @@ const About = (props) => {
             one of the best possible source of information, I mostly read
             related to Physics ,Business,Startups, Psychology and Tech.
           </p>
-          <h3 className="heading">Programming Skills</h3>
-          <div className="skills">
-            <div className="PS">
+          <h3 className={styles.heading}>Programming Skills</h3>
+          <div className={styles.skills}>
+            <div className={styles.PS}>
               <ul>
                 <li>JAVA</li>
                 <li>C</li>
@@ -42,7 +46,7 @@ const About = (props) => {
                 <li>UI/UX</li>
               </ul>
             </div>
-            <div className="PS">
+            <div className={styles.PS}>
               <ul>
                 <li>Docker</li>
                 <li>SQL</li>
@@ -55,9 +59,9 @@ const About = (props) => {
               </ul>
             </div>
           </div>
-          <h3 className="heading">Other Skills</h3>
-          <div className="skills">
-            <div className="PS">
+          <h3 className={styles.heading}>Other Skills</h3>
+          <div className={styles.skills}>
+            <div className={styles.PS}>
               <ul>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
@@ -66,7 +70,7 @@ const About = (props) => {
               </ul>
             </div>
 
-            <div className="PS">
+            <div className={styles.PS}>
               <ul>
                 <li>Premier Pro</li>
                 <li>Photography</li>
@@ -75,9 +79,9 @@ const About = (props) => {
           </div>
         </div>
       </div>
-      <form action="https://formspree.io/f/xnqwwdwz" method="POST">
+      <form action="https://formspree.io/f/xnqwwdwz" method="POST" className={styles.formContainer}>
         <h2>Contact Me</h2>
-        <div class="form-group">
+        <div className={styles["form-group"]}>
           <label for="exampleInputEmail1">Name</label>
           <input
             type="text"
@@ -87,26 +91,35 @@ const About = (props) => {
             placeholder="Enter name"
           />
         </div>
-        <div class="form-group">
+        <div className={styles["form-group"]}>
           <label for="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" class="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
+          <div className={styles.fullWidth}>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" className={styles.bottomText}>
+              We'll never share your email with anyone else.
+            </small>
+          </div>
         </div>
-        <label for="exampleInputEmail1">Decription</label>
-        <div class="form-group">
-          <textarea id="w3review" name="w3review" rows="4" cols="60"></textarea>
+        <div className={styles["form-group"]}>
+          <label for="exampleInputEmail1">Decription</label>
+          <div className={styles["form-group"]}>
+            <textarea
+              id="w3review"
+              name="w3review"
+              rows="4"
+              cols="60"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="form-submit">
+            Submit
+          </button>
         </div>
-        <button type="submit" class="btn btn-primary" id="form-submit">
-          Submit
-        </button>
       </form>
       <Particles
         id="tsparticles"

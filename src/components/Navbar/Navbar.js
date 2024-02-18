@@ -22,7 +22,6 @@ const Navbar = () => {
 
   const navObserver = new IntersectionObserver((enteries) => {
     const isInterSecting = !enteries[0].isIntersecting;
-    console.log({ isInterSecting });
     setCanChangeBGColor(isInterSecting);
   });
 

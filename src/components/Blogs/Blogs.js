@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 import Particles from "react-tsparticles";
-import { HASHNODE_API } from "../../Constants/Const";
+import { GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
 import { motion } from "framer-motion";
 import "./Blogs.css";
 import BlogCard from "../BlogCard/BlogCard";
 import CustomLoader from "../CustomLoader/CustomLoader";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 const HASHNODE_POST_QUERY = `
     {
@@ -40,12 +41,19 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
         body: JSON.stringify({ query: HASHNODE_POST_QUERY }),
       });
       const data = await res.json();
-      setData(data?.data?.user?.publication?.posts);
       setIsLoading(false);
+      if (data?.data?.user?.publication?.posts) {
+        setData(data?.data?.user?.publication?.posts);
+        return;
+      }
+      setError(GENERAL_ERROR_TEXT);
     } catch (err) {
-      setError(error);
       setIsLoading(false);
-      console.log(error);
+      if (err?.message) {
+        setError(err?.message);
+        return;
+      }
+      setError(GENERAL_ERROR_TEXT);
     }
   };
 
@@ -72,7 +80,11 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
         </>
       )}
       {isLoading && !error && <CustomLoader />}
-      {!!error && !isLoading && <h3>{error}</h3>}
+      {!!error && !isLoading && <ErrorMessage 
+      heading={"error ocuured"}
+      description={"Not able to fetch data"}
+      
+      />}
       <Particles
         id="tsparticles"
         init={particlesInit}

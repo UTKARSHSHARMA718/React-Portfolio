@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Yeseva+One&display=swap");
+/* TODO: Refactor styles */
 
-#profilePic {
-  height: 250px;
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.ppContainer{
+.profilePic {
+  max-height: 250px;
+}
+
+.ppContainer {
   background-color: white;
   margin-top: 20px;
-  width: 242px; 
-  height: 230px; 
+  width: 242px;
+  height: 230px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -18,6 +25,7 @@
   border: 1px solid #4df748;
   filter: drop-shadow(0 0 4px #3dfa76);
 }
+
 .description {
   color: white;
   text-align: center;
@@ -26,9 +34,10 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
   /* font-weight: bold; */
 }
+
 .PS {
   margin-top: 20px;
   /* to show two lists side by side */
@@ -36,59 +45,73 @@
   width: 321px;
   vertical-align: top;
   color: yellow;
- 
-
-}
-.heading{
-    text-align: center;
-    color: rgb(32, 255, 32);
-    font-family: 'Spectral', serif;
-    font-weight: bold;
-}
-.skills{
-  font-family: 'Yeseva One', cursive;
-    text-align: center;
 }
 
+.heading {
+  text-align: center;
+  color: rgb(32, 255, 32);
+  font-family: "Spectral", serif;
+  font-weight: bold;
+}
 
+.skills {
+  font-family: "Yeseva One", cursive;
+  text-align: center;
+}
 
-form{
+form {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30rem;
-  height: 20rem;
   color: white;
   margin-bottom: 5rem;
 }
 
-#form-submit{
+#form-submit {
   margin-top: 1rem;
   background-color: greenyellow;
   color: black;
 }
-@media( max-width:764px){
-  
-  .description{
+
+.form-group {
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 8px;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.bottomText{
+  align-self: flex-start;
+  opacity: 0.6;
+}
+
+@media (max-width: 764px) {
+  .description {
     width: 17rem;
   }
-  .PP{
+  .PP {
     width: 200px;
     height: 245px;
   }
-  .ppContainer{
+  .ppContainer {
     width: 210px;
     height: 205px;
     margin-top: 3rem;
   }
-  .PS{
+  .PS {
     margin-top: 0.3rem;
     width: 213px;
   }
-  form{
+  form {
     width: 19rem;
   }
- #w3review{
-  width: 19rem;
- }
+  #w3review {
+    width: 19rem;
+  }
 }

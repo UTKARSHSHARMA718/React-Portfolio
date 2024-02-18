@@ -2,6 +2,7 @@
   width: 19rem;
   height: 370px;
 }
+
 .card {
   overflow: hidden;
   background-color: rgb(111, 175, 231);
@@ -20,21 +21,19 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
 .card-title {
   text-align: center;
   font-size: 19px;
   font-weight: bold;
   text-shadow: 4px 3px 10px black;
 }
+
 .card-text {
   font-weight: bold;
   text-align: center;
 }
-/* .card:hover{
 
-  
-  
-} */
 .card:hover,
 .card:focus,
 .card:active {
@@ -44,36 +43,46 @@
   box-shadow: 1px 1px 20px -1px rgb(120, 251, 120);
   transform: scale(1.1);
 }
+
 .imgWork {
   width: 310px;
   height: 165px;
 }
+
 body {
   background-color: black;
 }
 
 .workButton {
-  position: absolute;
-  bottom: -0.5rem;
   width: 15rem;
-  margin-bottom: 50px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   background-color: greenyellow;
-  margin-bottom: 1rem;
   font-family: "Poppins";
+  border-radius: 8px;
+  padding: 2px 8px;
+  text-decoration: none;
 }
+
 h5 {
   color: rgb(51, 255, 0);
 }
+
 h2 {
   text-align: center;
   color: rgb(241, 38, 241);
   text-shadow: 2px 2px 21px rgb(255, 183, 255);
 }
+
 h1 {
   color: greenyellow;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 
 .hcj {
@@ -89,9 +98,11 @@ h1 {
     margin-right: auto;
     margin-bottom: 2rem;
   }
+
   .move-down-pro {
     margin-top: 60px;
   }
+
   .move-down-react {
     margin-top: 20px;
   }
@@ -101,6 +112,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
   }
+
   .workButton {
     width: 15rem;
     margin-bottom: 3rem;

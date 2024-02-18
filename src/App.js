@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import "./index.css";
 
+// Implement Lazy loading.
 function App() {
   return (
     <>
