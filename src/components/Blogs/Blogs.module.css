@@ -11,7 +11,7 @@ h1 {
   word-spacing: 4px;
 }
 
-#blogss {
+.blogs-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -37,7 +37,7 @@ h1 {
     font-weight: bold;
     font-size: 15px;
   }
-  h1 {
+  .heading {
     margin-top: 70px;
   }
   .blogsDialog {

@@ -32,35 +32,32 @@ const Front = (props) => {
   });
 
   return (
-    <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1}}
-        exit={{ opacity: 0}}
-        transition={{duration:1.5}}
-      >
-        <div className="welcome">
-          <div class="content">
-            <h1 className="introduction" id="one">
-              Hi,I am
-            </h1>
-            <h1 className="introduction" id="two">
-              Utkarsh Sharma
-            </h1>
-            <h1 className="introduction" id="three">
-              A software Engineer
-            </h1>
-          </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+    >
+      <div className="welcome">
+        <div class="content">
+          <h1 className="introduction" id="one">
+            Hi,I am
+          </h1>
+          <h1 className="introduction" id="two">
+            Utkarsh Sharma
+          </h1>
+          <h1 className="introduction" id="three">
+            A software Engineer
+          </h1>
         </div>
-        <Particles
-          id="tsparticles"
-          init={props.particlesInit}
-          loaded={props.particlesLoaded}
-          options={props.particlesOptions}
-        />
-      </motion.div>
-      {/* </div> */}
-    </>
+      </div>
+      <Particles
+        id="tsparticles"
+        init={props.particlesInit}
+        loaded={props.particlesLoaded}
+        options={props.particlesOptions}
+      />
+    </motion.div>
   );
 };
 

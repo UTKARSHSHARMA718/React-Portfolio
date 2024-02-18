@@ -1,0 +1,33 @@
+.card {
+  max-width: 20vw;
+  max-height: 50vh;
+  min-width: 300px;
+  background-color: #0c0c0c;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 2px solid green;
+  overflow: hidden;
+  transition: all 1 ease;
+}
+
+.card:hover {
+  box-shadow: 1px 0px 15px green;
+  transform: scale(1.05);
+}
+
+.images {
+  max-width: 200px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+a {
+  text-decoration: none;
+}

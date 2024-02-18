@@ -8,7 +8,8 @@ export const TWITTER_PROFILE_URL =
   "https://twitter.com/learningbeing18?t=HHau01-onE590wY8CGArIw&s=09";
 
 //API
-export const HASHNODE_API = "https://api.hashnode.com";
+// export const HASHNODE_API = "https://api.hashnode.com/";
+export const HASHNODE_API = "https://gql.hashnode.com/";
 
 export const apiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
 

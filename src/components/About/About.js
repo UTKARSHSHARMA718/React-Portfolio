@@ -79,11 +79,16 @@ const About = (props) => {
           </div>
         </div>
       </div>
-      <form action="https://formspree.io/f/xnqwwdwz" method="POST" className={styles.formContainer}>
+      <form
+        action="https://formspree.io/f/xnqwwdwz"
+        method="POST"
+        className={styles.formContainer}
+      >
         <h2>Contact Me</h2>
         <div className={styles["form-group"]}>
           <label for="exampleInputEmail1">Name</label>
           <input
+            required
             type="text"
             class="form-control"
             id="name"
@@ -95,6 +100,7 @@ const About = (props) => {
           <label for="exampleInputEmail1">Email address</label>
           <div className={styles.fullWidth}>
             <input
+              required
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -110,10 +116,12 @@ const About = (props) => {
           <label for="exampleInputEmail1">Decription</label>
           <div className={styles["form-group"]}>
             <textarea
+              required
               id="w3review"
               name="w3review"
               rows="4"
               cols="60"
+              className={styles.textArea}
             ></textarea>
           </div>
           <button type="submit" class="btn btn-primary" id="form-submit">

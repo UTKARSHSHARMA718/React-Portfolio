@@ -79,6 +79,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: self-start;
+  width: 100%;
   gap: 8px;
 }
 
@@ -89,6 +90,11 @@ form {
 .bottomText{
   align-self: flex-start;
   opacity: 0.6;
+}
+
+.textArea{
+  width: 100%;
+  padding: 8px;
 }
 
 @media (max-width: 764px) {
