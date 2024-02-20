@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Particles from "react-tsparticles";
-import { GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
+import { ERROR_OCCURED, GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
 import { motion } from "framer-motion";
 import BlogCard from "../BlogCard/BlogCard";
 import CustomLoader from "../CustomLoader/CustomLoader";
@@ -52,7 +52,7 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
       });
       const data = await res.json();
       setIsLoading(false);
-      if (data?.data) {
+      if (data?.data?.user?.posts?.edges) {
         setData(data?.data?.user?.posts?.edges);
         return;
       }
@@ -92,7 +92,7 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
       {isLoading && !error && <CustomLoader />}
       {!!error && !isLoading && (
         <ErrorMessage
-          heading={"Error Occured"}
+          heading={ERROR_OCCURED}
           description={error}
           onBtnClick={fetchData}
         />

@@ -1,31 +1,31 @@
 .card {
-  max-width: 20vw;
-  max-height: 50vh;
-  min-width: 300px;
-  background-color: #0c0c0c;
-  border-radius: 16px;
-  padding: 24px;
+  max-width: var(--width_20vw);
+  max-height: var(--height_50vh);
+  min-width: var(--width_300);
+  background-color: var(--black1);
+  border-radius: var(--radisu_16);
+  padding: var(--padding_24);
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  border: 2px solid green;
+  gap: var(--gap_32);
+  border: var(--radisu_2) solid var(--green1);
   overflow: hidden;
   transition: all 1 ease;
 }
 
 .card:hover {
-  box-shadow: 1px 0px 15px green;
+  box-shadow: var(--gen_1) var(--gen_0) var(--blur_15) var(--green1);
   transform: scale(1.05);
 }
 
 .images {
-  max-width: 200px;
+  max-width: var(--width_200);
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--gap_24);
 }
 
 a {

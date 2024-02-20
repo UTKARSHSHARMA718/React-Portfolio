@@ -2,19 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: var(--height_50vh);
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 50vw;
-    min-width: 30vw;
-    background-color: white;
-    border-radius: 16px;
-    padding: 24px;
-    gap: 16px;
+    max-width: var(--width_50vw);
+    min-width: var(--width_30vw);
+    background-color: var(--white1);
+    border-radius: var(--radisu_16);
+    padding: var(--padding_24);
+    gap: var(--gap_16);
 }
 
 p{
@@ -22,21 +22,19 @@ p{
 }
 
 .image{
-    max-width: 50px;
-    max-height: 50px;
+    max-width: var(--width_50);
+    max-height: var(--height_50);
 }
 
 .heading{
-    font-size: 28px;
-    color: red;
-    font-weight: 600;
-    font-family: ariel;
+    font-size: var(--fontSize_heading);
+    color: var(--red1);
+    font-weight: var(--fontWeightBold);
     text-transform: capitalize;
 }
 
 .subHeading{
-    font-family: ariel;
-    font-weight: 500;
-    color: black;
-    font-size: 16px;
+    font-weight: var(--fontWeightMedium);
+    color: var(--black2);
+    font-size: var(--fontSize_normal);
 }

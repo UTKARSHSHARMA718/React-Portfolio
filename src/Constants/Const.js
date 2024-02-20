@@ -19,3 +19,7 @@ export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
 
 //General text
 export const GENERAL_ERROR_TEXT = "Something went wrong!";
+export const ERROR_OCCURED = "Error Occurred";
+
+// variables for specific purpose
+export const CHARACTERS_TO_BE_SHOWN = 120;

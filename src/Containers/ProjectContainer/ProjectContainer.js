@@ -1,8 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import styles from "./ProjectContainer.module.css";
 
-const ProjectContainer = ({ title, data }) => {
+const ProjectContainer = ({ data, title }) => {
   return (
     <div className={styles["projects-container"]}>
       <div>
@@ -30,6 +32,16 @@ const ProjectContainer = ({ title, data }) => {
       </div>
     </div>
   );
+};
+
+ProjectContainer.defaultProps = {
+  data: [],
+  title: "",
+};
+
+ProjectContainer.prototype = {
+  data: PropTypes.array,
+  title: PropTypes.string,
 };
 
 export default ProjectContainer;

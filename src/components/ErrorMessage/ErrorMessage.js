@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import CustomButton from "../CustomButton/CustomButton"; 
+import CustomButton from "../CustomButton/CustomButton";
 import warningImage from "../../Assets/Images/warning-34621_1920.png";
 import styles from "./ErrorMessage.module.css";
 
@@ -24,11 +24,7 @@ const ErrorMessage = ({ btnText, description, heading, image, onBtnClick }) => {
             <p className={styles.subHeading}>{description}</p>
           </div>
         )}
-        {!!btnText && (
-          <div>
-            <CustomButton text={btnText} onClick={onBtnClick} />
-          </div>
-        )}
+        {!!btnText && <CustomButton text={btnText} onClick={onBtnClick} />}
       </div>
     </div>
   );

@@ -1,24 +1,19 @@
-h2 {
-  text-align: center;
-  color: rgb(241, 38, 241);
-  text-shadow: 2px 2px 21px rgb(255, 183, 255);
-}
 
 .projectCardContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
-    padding: 3rem;
+    gap: var(--gap_2rem);
+    padding: var(--padding_3rem);
 }
 
-@media (max-width: 768px) {
-  .move-down-pro {
-    margin-top: 60px;
+@media (max-width: 767px) {
+  .move-down-react {
+    margin-top: var(--margin_20);
   }
 
-  .move-down-react {
-    margin-top: 20px;
+  .projectCardContainer{
+    justify-content: center;
   }
 }

@@ -1,7 +1,9 @@
 import React from "react";
-import styles from "./CustomButton.module.css"
+import PropTypes from "prop-types";
 
-const CustomButton = ({ text, onClick, customStyles }) => {
+import styles from "./CustomButton.module.css";
+
+const CustomButton = ({ customStyles, onClick, text }) => {
   return (
     <button
       className={[styles.btn, customStyles].join(" ")}
@@ -12,6 +14,18 @@ const CustomButton = ({ text, onClick, customStyles }) => {
       {text}
     </button>
   );
+};
+
+CustomButton.defaultProps = {
+  customStyles: "",
+  onClick: () => {},
+  text: "",
+};
+
+CustomButton.propTypes = {
+  customStyles: PropTypes.string,
+  onClick: PropTypes.func,
+  text: PropTypes.string,
 };
 
 export default CustomButton;

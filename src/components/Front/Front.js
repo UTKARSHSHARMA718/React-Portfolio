@@ -40,15 +40,9 @@ const Front = (props) => {
     >
       <div className="welcome">
         <div class="content">
-          <h1 className="introduction" id="one">
-            Hi,I am
-          </h1>
-          <h1 className="introduction" id="two">
-            Utkarsh Sharma
-          </h1>
-          <h1 className="introduction" id="three">
-            A software Engineer
-          </h1>
+          <h1 className="introduction">Hi,I am</h1>
+          <h1 className="introduction">Utkarsh Sharma</h1>
+          <h1 className="introduction">A software Engineer</h1>
         </div>
       </div>
       <Particles

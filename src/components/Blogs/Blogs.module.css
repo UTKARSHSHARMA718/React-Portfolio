@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 
 #title {
-  font-family: "Spectral", cursive;
   font-weight: bold;
   color: rgb(103, 255, 103);
 }
+
 h1 {
-  font-family: "Spectral", cursive;
   font-weight: bold;
   word-spacing: 4px;
 }

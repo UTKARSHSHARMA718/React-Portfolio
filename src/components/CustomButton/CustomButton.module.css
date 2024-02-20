@@ -1,8 +1,9 @@
 .btn {
-  padding: 4px 8px;
+  width: var(--fullWidth);
+  padding: var(--padding_4) var(--padding_8);
   border: 0;
-  border-radius: 8px;
-  background-color: lawngreen;
-  color: black;
-  font-weight: 500;
+  border-radius: var(--radisu_8);
+  background-color: var(--green3);
+  color: var(--black2);
+  font-weight: var(--fontWeightMedium);
 }

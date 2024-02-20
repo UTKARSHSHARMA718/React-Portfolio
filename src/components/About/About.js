@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import Particles from "react-tsparticles";
 import profilePic from "../../Assets/Images/Profile Pic LinkedIn with infinity.jpg";
@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import styles from "./About.module.css";
 
 const About = (props) => {
+  // TODO: refactor this component
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -117,14 +118,16 @@ const About = (props) => {
           <div className={styles["form-group"]}>
             <textarea
               required
-              id="w3review"
-              name="w3review"
               rows="4"
               cols="60"
               className={styles.textArea}
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" id="form-submit">
+          <button
+            type="submit"
+            className={["btn", "btn-primary"].join(" ")}
+            id="form-submit"
+          >
             Submit
           </button>
         </div>

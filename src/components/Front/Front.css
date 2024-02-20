@@ -1,5 +1,5 @@
 .content {
-  min-height: 50vh;
+  min-height: var(--height_50vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,16 +14,15 @@
 
 .introduction {
   text-transform: uppercase;
-  font-size: 2rem;
-  font-family: "Verdana";
+  font-size: var(--fontSize_heading);
 }
 
 @media only screen and (max-width: 768px) {
   .socials {
-    padding-right: 4px;
+    padding-right: var(--padding_4);
   }
  
   .introduction {
-    font-size: 1rem;
+    font-size: var(--fontSize_normal);
   }
 }
