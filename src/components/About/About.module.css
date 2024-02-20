@@ -1,61 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Yeseva+One&display=swap");
-/* TODO: Refactor styles */
 
-.formContainer{
+.formContainer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--gap_16);
 }
 
 .profilePic {
-  max-height: 250px;
+  max-height: var(--height_250);
 }
 
 .ppContainer {
-  background-color: white;
-  margin-top: 20px;
-  width: 242px;
-  height: 230px;
-  border-radius: 50%;
+  background-color: var(--white1);
+  margin-top: var(--margin_20);
+  width: var(--width_240);
+  height: var(--height_230);
+  border-radius: var(--radisu_50Per);
   margin-left: auto;
   margin-right: auto;
   display: block;
   overflow: hidden;
-  /* styling for pp */
-  border: 1px solid #4df748;
-  filter: drop-shadow(0 0 4px #3dfa76);
+  /* styling for pp (Profile Picture)*/
+  border: 1px solid var(--green4);
+  filter: drop-shadow(0 0 4px var(--green2));
 }
 
 .description {
-  color: white;
+  color: var(--white1);
   text-align: center;
-  width: 650px;
-  margin-top: 40px;
+  max-width: var(--width_650);
+  margin-top: var(--margin_40);
   margin-left: auto;
   margin-right: auto;
   display: block;
-  font-family: "Yeseva One", cursive;
-  /* font-weight: bold; */
+  padding: var(--padding_8) var(--padding_24);
 }
 
 .PS {
-  margin-top: 20px;
+  margin-top: var(--margin_20);
   /* to show two lists side by side */
   display: inline-block;
-  width: 321px;
+  width: var(--width_320);
   vertical-align: top;
-  color: yellow;
+  color: var(--yellow1);
 }
 
 .heading {
   text-align: center;
-  color: rgb(32, 255, 32);
-  font-family: "Spectral", serif;
+  color: var(--green4);
   font-weight: bold;
 }
 
 .skills {
-  font-family: "Yeseva One", cursive;
   text-align: center;
 }
 
@@ -63,55 +59,55 @@ form {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30rem;
-  color: white;
-  margin-bottom: 5rem;
+  max-width: var(--width_30rem);
+  color: var(--white1);
+  margin-bottom: var(--margin_5rem);
+  padding: var(--padding_24);
 }
 
 #form-submit {
-  margin-top: 1rem;
-  background-color: greenyellow;
-  color: black;
+  margin-top: var(--margin_1rem);
+  background-color: var(--green3);
+  color: var(--black2);
 }
 
 .form-group {
   justify-content: start;
   display: flex;
   flex-direction: column;
-  align-items: self-start;
-  gap: 8px;
+  align-items: flex-start;
+  width: var(--fullWidth);
+  gap: var(--gap_8);
 }
 
-.fullWidth{
-  width: 100%;
+.fullWidth {
+  width: var(--fullWidth);
 }
 
-.bottomText{
+.bottomText {
   align-self: flex-start;
   opacity: 0.6;
 }
 
+.textArea {
+  width: var(--fullWidth);
+  padding: var(--padding_8);
+}
+
 @media (max-width: 764px) {
-  .description {
-    width: 17rem;
-  }
   .PP {
-    width: 200px;
-    height: 245px;
+    width: var(--width_200);
+    height: var(--height_245);
   }
+
   .ppContainer {
-    width: 210px;
-    height: 205px;
-    margin-top: 3rem;
+    width: var(--width_210);
+    height: var(--height_210);
+    margin-top: var(--margin_3rem);
   }
+
   .PS {
-    margin-top: 0.3rem;
-    width: 213px;
-  }
-  form {
-    width: 19rem;
-  }
-  #w3review {
-    width: 19rem;
+    margin-top: var(--margin_03rem);
+    width: var(--width_210);
   }
 }

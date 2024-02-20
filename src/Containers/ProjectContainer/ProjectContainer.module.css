@@ -1,0 +1,19 @@
+
+.projectCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--gap_2rem);
+    padding: var(--padding_3rem);
+}
+
+@media (max-width: 767px) {
+  .move-down-react {
+    margin-top: var(--margin_20);
+  }
+
+  .projectCardContainer{
+    justify-content: center;
+  }
+}

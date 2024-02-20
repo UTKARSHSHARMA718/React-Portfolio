@@ -1,3 +1,5 @@
+/* TODO: Refactor styles */
+
 .workcard {
   width: 19rem;
   height: 370px;
@@ -57,7 +59,6 @@ body {
   width: 15rem;
   display: block;
   background-color: greenyellow;
-  font-family: "Poppins";
   border-radius: 8px;
   padding: 2px 8px;
   text-decoration: none;

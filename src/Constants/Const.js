@@ -8,7 +8,8 @@ export const TWITTER_PROFILE_URL =
   "https://twitter.com/learningbeing18?t=HHau01-onE590wY8CGArIw&s=09";
 
 //API
-export const HASHNODE_API = "https://api.hashnode.com";
+// export const HASHNODE_API = "https://api.hashnode.com/";
+export const HASHNODE_API = "https://gql.hashnode.com/";
 
 export const apiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
 
@@ -16,5 +17,11 @@ export const googleBooksApi = "https://www.googleapis.com/books/v1/volumes?q=";
 
 export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
 
+export const BLOGS_END_POINT = "https://supercomputing.hashnode.dev/";
+
 //General text
 export const GENERAL_ERROR_TEXT = "Something went wrong!";
+export const ERROR_OCCURED = "Error Occurred";
+
+// variables for specific purpose
+export const CHARACTERS_TO_BE_SHOWN = 120;

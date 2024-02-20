@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 
 #title {
-  font-family: "Spectral", cursive;
   font-weight: bold;
   color: rgb(103, 255, 103);
 }
+
 h1 {
-  font-family: "Spectral", cursive;
   font-weight: bold;
   word-spacing: 4px;
 }
 
-#blogss {
+.blogs-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -37,7 +36,7 @@ h1 {
     font-weight: bold;
     font-size: 15px;
   }
-  h1 {
+  .heading {
     margin-top: 70px;
   }
   .blogsDialog {

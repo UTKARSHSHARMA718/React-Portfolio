@@ -1,27 +1,34 @@
 import React, { useEffect, useState } from "react";
 
 import Particles from "react-tsparticles";
-import { GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
+import { ERROR_OCCURED, GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
 import { motion } from "framer-motion";
-import "./Blogs.css";
 import BlogCard from "../BlogCard/BlogCard";
 import CustomLoader from "../CustomLoader/CustomLoader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import styles from "./Blogs.module.css";
 
 const HASHNODE_POST_QUERY = `
-    {
-      user(username: "Utkarsh-sharma") {
-        publication {
-          posts{
-            slug
-            title
-            brief
-            coverImage
-            _id
+query User($username: String!, $page: Int!, $pageSize: Int!) {
+  user(username: $username) {
+    id
+    username
+    name
+    posts(page: $page, pageSize: $pageSize) {
+      edges {
+        node {
+          id
+          slug
+          title
+          brief
+          coverImage {
+            url
           }
         }
       }
     }
+  }
+}
 `;
 
 const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
@@ -38,12 +45,15 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({ query: HASHNODE_POST_QUERY }),
+        body: JSON.stringify({
+          query: HASHNODE_POST_QUERY,
+          variables: { page: 1, pageSize: 3, username: "Utkarsh-sharma" },
+        }),
       });
       const data = await res.json();
       setIsLoading(false);
-      if (data?.data?.user?.publication?.posts) {
-        setData(data?.data?.user?.publication?.posts);
+      if (data?.data?.user?.posts?.edges) {
+        setData(data?.data?.user?.posts?.edges);
         return;
       }
       setError(GENERAL_ERROR_TEXT);
@@ -67,24 +77,26 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
-      className="blogsDialog"
+      className={styles["blogsDialog"]}
     >
-      {!isLoading && !!data?.length && !error && (
+      {!isLoading && !error && (
         <>
-          <h1 className="heading">My Blogs</h1>
-          <div id="blogss">
+          <h1 className={styles["heading"]}>My Blogs</h1>
+          <div className={styles["blogs-container"]}>
             {data?.map((post) => (
-              <BlogCard {...{ post }} key={post?._id} />
+              <BlogCard post={post?.node} key={post?._id} />
             ))}
           </div>
         </>
       )}
       {isLoading && !error && <CustomLoader />}
-      {!!error && !isLoading && <ErrorMessage 
-      heading={"error ocuured"}
-      description={"Not able to fetch data"}
-      
-      />}
+      {!!error && !isLoading && (
+        <ErrorMessage
+          heading={ERROR_OCCURED}
+          description={error}
+          onBtnClick={fetchData}
+        />
+      )}
       <Particles
         id="tsparticles"
         init={particlesInit}

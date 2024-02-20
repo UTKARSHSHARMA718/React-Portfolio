@@ -5,10 +5,7 @@
 input {
   display: none;
 }
-.navbar {
-  font-family: "Poppins", sans-serif;
-}
-
+/* TODO: refactor styles (pass styles values via var method) */
 @media (max-width: 768px) {
   .navLinks {
     display: block;
