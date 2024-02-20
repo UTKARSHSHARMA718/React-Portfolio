@@ -1,27 +1,28 @@
 body {
-  background-color: black;
+  background-color: var(--black2);
 }
 
 h5 {
-  color: rgb(51, 255, 0);
+  color: var(--green4);
 }
 
 .workcard {
-  width: 19rem;
-  height: 370px;
+  max-width: var(--width_19rem);
+  max-height: var(--height_370);
+  min-height: var(--height_370);
 }
 
 .card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: rgb(111, 175, 231);
-  border: 4px solid;
-  border-radius: 23px;
-  border-color: greenyellow;
+  background-color: var(--blue1);
+  border: var(--border_4) solid;
+  border-radius: var(--radisu_24);
+  border-color: var(--green3);
   vertical-align: middle;
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px var(--black2);
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
@@ -30,9 +31,9 @@ h5 {
 
 .card-title {
   text-align: center;
-  font-size: 19px;
+  font-size: var(--fontSize_sunHeading);
   font-weight: bold;
-  text-shadow: 4px 3px 10px black;
+  text-shadow: 4px 3px 10px var(--black2);
 }
 
 .card-text {
@@ -44,24 +45,23 @@ h5 {
 .card:focus,
 .card:active {
   /* box shadow */
-  -webkit-box-shadow: 1px 5px 24px -1px rgb(120, 251, 120);
-  -moz-box-shadow: 1px 5px 24px -1px rgb(120, 251, 120);
-  box-shadow: 1px 1px 20px -1px rgb(120, 251, 120);
+  -webkit-box-shadow: 1px 5px 24px -1px var(--green4);
+  -moz-box-shadow: 1px 5px 24px -1px var(--green4);
+  box-shadow: 1px 1px 20px -1px var(--green4);
   transform: scale(1.1);
 }
 
 .imgWork {
-  width: 310px;
-  height: 165px;
+  width: var(--width_310);
+  height: var(--height_165);
 }
 
 .workButton {
-  width: 15rem;
+  width: var(--width_15rem);
   display: block;
-  background-color: greenyellow;
-  font-family: "Poppins";
-  border-radius: 8px;
-  padding: 2px 8px;
+  background-color: var(--green3);
+  border-radius: var(--radisu_8);
+  padding: var(--padding_4) var(--padding_8);
   text-decoration: none;
 }
 
@@ -70,40 +70,10 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: var(--padding_16);
   flex: 1;
 }
 
 .hcj {
-  background-color: crimson;
-}
-
-@media (max-width: 768px) {
-  .workcard {
-    width: 18rem;
-    height: 391px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-  }
-
-  .move-down-pro {
-    margin-top: 60px;
-  }
-
-  .move-down-react {
-    margin-top: 20px;
-  }
-
-  .card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .workButton {
-    width: 15rem;
-    margin-bottom: 3rem;
-  }
+  background-color: var(--red2);
 }

@@ -17,6 +17,8 @@ export const googleBooksApi = "https://www.googleapis.com/books/v1/volumes?q=";
 
 export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
 
+export const BLOGS_END_POINT = "https://supercomputing.hashnode.dev/";
+
 //General text
 export const GENERAL_ERROR_TEXT = "Something went wrong!";
 export const ERROR_OCCURED = "Error Occurred";
