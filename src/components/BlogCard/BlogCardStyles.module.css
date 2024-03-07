@@ -1,7 +1,15 @@
+.parentContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .card {
-  max-width: var(--width_20vw);
-  max-height: var(--height_50vh);
-  height: 50vh;
+  max-width: var(--width_20vw, 20vw);
+  min-height: 30vh;
+  max-height: 500px;
+  height: 100%;
+  /* flex: 1; */
   min-width: var(--width_300);
   border-radius: var(--radisu_16);
   padding: var(--padding_24);
@@ -9,9 +17,17 @@
   flex-direction: column;
   gap: var(--gap_32);
   border: var(--radisu_2) solid var(--green1);
-  overflow: hidden;
   background-color: var(--grey1);
   transition: 0.5s;
+}
+
+.headingContainer {
+  background-color: rgb(90, 90, 90);
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .descriptionContainer {
