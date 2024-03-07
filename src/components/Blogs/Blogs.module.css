@@ -14,32 +14,18 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
   flex-wrap: wrap;
+  padding: 24px;
 }
 
 .heading {
   color: "greenyellow";
+  margin: 24px 0px;
 }
 
 @media (max-width: 768px) {
-  .cardSize {
-    width: 18rem;
-    height: 364px;
-    margin-top: 20px;
-  }
-  .card {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card-text {
-    font-weight: bold;
-    font-size: 15px;
-  }
   .heading {
     margin-top: 70px;
-  }
-  .blogsDialog {
-    height: 100rem;
   }
 }

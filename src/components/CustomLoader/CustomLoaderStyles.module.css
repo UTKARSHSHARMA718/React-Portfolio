@@ -1,0 +1,22 @@
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.height20vh{
+  height: 20vh;
+}
+
+.small {
+  width: 50px;
+}
+
+.medium {
+  width: 100px;
+}
+
+.large {
+  width: 200px;
+}

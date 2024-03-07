@@ -2,66 +2,16 @@
 .barsIcon {
   display: none;
 }
-input {
+
+.responsive-input {
   display: none;
 }
-/* TODO: refactor styles (pass styles values via var method) */
-@media (max-width: 768px) {
-  .navLinks {
-    display: block;
-    margin: 50px 0px;
-  }
-  .navbar {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    text-align: center;
-    left: -100%;
-    top: 60px;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  .frontIMG {
-    position: fixed;
-    display: block;
-    top: 4%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .jungle {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-image: url("../../Assets/Images/jungle.jpg");
-    width: 100%;
-    height: 60px;
-  }
-  .barsIcon {
-    display: block;
-    margin-left: 90%;
-    color: chartreuse;
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: -1%;
-  }
-  .navbar-mobile {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    text-align: center;
-    left: 0%;
-    top: 60px;
-    display: block;
-    transition: all 0.3s ease;
-    z-index: 1;
-  }
-  .fas {
-    margin-top: 1.5rem;
-  }
+
+.transition {
+  transition: all 0.5s ease !important;
 }
 
+/* TODO: refactor styles (pass styles values via var method) */
 .navbar {
   display: flex;
   align-items: center;
@@ -77,9 +27,11 @@ input {
 .on-navbar-sticking {
   background-color: #4ce93721;
 }
-.containerNav{
+
+.containerNav {
   transition: all ease-in-out 1s;
 }
+
 .stick-to-top {
   position: sticky;
   top: 0px;
@@ -91,6 +43,8 @@ input {
   font-size: 18px;
   margin-right: 20px;
   color: chartreuse;
+  font-family: poppins;
+  font-weight: 500;
 }
 
 .navLinks:hover {
@@ -113,19 +67,69 @@ input {
 #logo {
   width: 120px;
   height: 50px;
+  cursor: pointer;
 }
 
 .whiteColor {
   color: white;
-  text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-  .navLinks {
-    font-size: 14px;
+/* NEW STYLES FOR RESPONSIVE NAVBAR */
+
+@media (max-width: 767px) {
+  .navLink-list {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    padding-top: 24px;
   }
-  #logo {
-    width: 100px;
-    height: 40px;
+
+  .display-none {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .barsIcon {
+    display: block;
+    color: white;
+  }
+
+  .jungle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLinks {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .navbar {
+    padding: 8px 16px;
+  }
+
+  .fas {
+    font-size: 20px;
+  }
+
+  .navbar-mobile {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(36, 34, 34, 0.74);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    left: 0%;
+    /* top: 60px; */
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 1;
+    padding: 8px 16px;
   }
 }

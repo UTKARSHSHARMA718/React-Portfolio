@@ -1,0 +1,44 @@
+.bookscard {
+  display: inline-block;
+  height: 20vh;
+  width: 8vw;
+  min-width: 130px;
+  min-height: 150px;
+  border: 3px solid greenyellow;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.bookscard:hover {
+  transform: scale(1.1);
+}
+
+.cardIMG {
+  width: 100%;
+  height: 100%;
+}
+
+.books-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .bookscard {
+    width: 50vw;
+    height: 30vh;
+  }
+}

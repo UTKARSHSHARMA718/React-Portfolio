@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Yeseva+One&display=swap");
 
+.parentContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  padding: 16px;
+  font-weight: 500;
+}
+
 .formContainer {
   display: flex;
   flex-direction: column;
   gap: var(--gap_16);
+  background-color: var(--black3);
+  border-radius: 12px;
 }
 
 .profilePic {
@@ -20,13 +30,13 @@
   margin-right: auto;
   display: block;
   overflow: hidden;
-  /* styling for pp (Profile Picture)*/
   border: 1px solid var(--green4);
   filter: drop-shadow(0 0 4px var(--green2));
 }
 
 .description {
   color: var(--white1);
+  font-weight: 500;
   text-align: center;
   max-width: var(--width_650);
   margin-top: var(--margin_40);
@@ -34,15 +44,17 @@
   margin-right: auto;
   display: block;
   padding: var(--padding_8) var(--padding_24);
+  background-color: var(--black3);
+  border-radius: 12px;
 }
 
 .PS {
   margin-top: var(--margin_20);
-  /* to show two lists side by side */
   display: inline-block;
   width: var(--width_320);
   vertical-align: top;
   color: var(--yellow1);
+  font-weight: 500;
 }
 
 .heading {
@@ -92,6 +104,14 @@ form {
 .textArea {
   width: var(--fullWidth);
   padding: var(--padding_8);
+}
+
+.descriptionAndSkillContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-self: center;
+  align-items: center;
 }
 
 @media (max-width: 764px) {

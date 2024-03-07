@@ -1,9 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import Particles from "react-tsparticles";
 import demoResumeImage from "./resumeImage.jpg";
-import resume from "./Latest_Updated_resume.pdf";
-import { motion } from "framer-motion";
+import resume from "./Utkarsh Resume.pdf";
 import "./resume.css";
 
 const Resume = (props) => {
@@ -15,16 +15,19 @@ const Resume = (props) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <div className="resumeImg">
-          <img src={demoResumeImage} alt="" className="img_of_resume" />
-          <a
-            href={resume}
-            download="resume"
-            className="downloadButton fa fa-download"
-          >
-            {" "}
-            Download
-          </a>
+        <div className="container">
+          <h1>Resume</h1>
+          <div className="resumeImg">
+            <img src={demoResumeImage} alt="" className="img_of_resume" />
+            <a
+              href={resume}
+              download="Utkarsh Sharma Resume"
+              className="downloadButton fa fa-download"
+            >
+              {" "}
+              Download
+            </a>
+          </div>
         </div>
         <Particles
           id="tsparticles"

@@ -1,22 +1,60 @@
+.completeInside {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.titleAndAuthorContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.authorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.descriptionContainer {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: var(--black3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.backBtnContainer {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .BackButton {
-  display: block;
-  position:relative;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
   background-color: greenyellow;
   color: black;
-  width: 7rem;
-  height: 2.5rem;
-  border-radius: 1rem;
-  border-color: rgb(98, 236, 55);
-  margin-top: 50vh;
-  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: 0px;
 }
-button:hover {
-  border-color: purple;
+
+.leftArrowImage {
+  width: 20px;
 }
-.info {
-  width: 55rem;
+
+.infoContainer {
+  max-width: 60%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -35,19 +73,18 @@ button:hover {
 
 .frame {
   background-color: #ddc;
-  border: solid 5vmin #eee;
+  border: solid 2vmin #eee;
   border-bottom-color: #fff;
   border-left-color: #eee;
   border-radius: 2px;
   border-right-color: #eee;
   border-top-color: #ddd;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
-    0 2px 11px 2px rgb(108, 228, 11);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 1px 3px 1px #fff;
   box-sizing: border-box;
   display: inline-block;
-  margin: 10vh 10vw;
-  height: 48vh;
-  padding: 2vmin;
+  margin: 24px;
+  height: 100%;
+  padding: 12px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -74,83 +111,93 @@ button:hover {
   }
 }
 
-#categories{
-    text-align: left;
+.categories {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: gold;
 }
-#previewLink{
-  margin-right: 80%;
+
+.previewLink,
+.buyLink {
+  color: gold !important;
+  font-weight: 500;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media (max-width:768px){
-  
-  #previewLink{
-   margin-right: 2rem;
-    margin-left: -2rem;
-  } 
-  .bookscard{
-    margin-left: auto;
-    margin-right: auto;
-    width: 14rem;
-    height: 17rem;
+.bookTitle {
+  font-family: poppins;
+  font-size: 32px;
+  font-weight: 600;
+}
 
-    
+.authors {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.desciption {
+  font-size: 14px;
+  word-spacing: 1.5px;
+  font-weight: 500;
+  color: white;
+}
+
+.categoriesAndBottonBtnsContainer {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  border-radius: 12px;
+  background-color: var(--black3);
+}
+
+.categoriesContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.buyAndPreviewLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+@media (max-width: 900px) {
+  .infoContainer {
+    max-width: 80%;
   }
-  .cardIMG{
-    width: 14rem;
-    height: 14rem;
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    max-width: 90%;
   }
-  #thumbnail {
-    
-    height: 17rem;
-    width: 14rem;
-    
-  }
-  .frame{
-    height: 21rem;
-    width: 18rem;
-    display: block;
-    margin-left: -3rem;
-  }
- 
-  #book-desc{
-    width: 21rem;
-    font-weight: bold;
-    margin-left: -4rem;
-  }
-  #categories{
-    text-align: left;
-    margin-left: -2rem;
-    font-size: 1.3rem;
-  }
-  #book-title {
-    left: 0px;
-    width: 17rem;
+
+  .bookTitle {
     font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: -3rem;
-}
-#authors{
-  width: 18rem;
-  font-size: 18px;
-    margin-bottom: 2rem;
-    margin-left: -3rem;
-}
+  }
 
-  .info {
-    width: 12rem;
-    
+  .authors {
+    font-size: 14px;
   }
-  .buyLinka{
-    display: block;
-    margin-left: -7rem;
+
+  .previewLink,
+  .buyLink {
+    font-size: 14px;
   }
-  #CPB{
-    width: 10rem;
-    margin: auto;
-  }
+
   .BackButton{
-    margin-top: 2rem;
+    font-size: 14px;
   }
 }

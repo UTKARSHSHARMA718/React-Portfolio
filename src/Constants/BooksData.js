@@ -1,17 +1,6 @@
 export const booksData = [
   {
-    name: "Rich dad Poor dad",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
-    imageUrl:
-      "https://images-na.ssl-images-amazon.com/images/I/51u8ZRDCVoL._SX330_BO1,204,203,200_.jpg",
-    buyLink: "https://www.amazon.in/Rich-Dad-Poor-Middle-Updates/dp/1612680194",
-  },
-  {
     name: "Black Swan",
-    author: "kyoyski",
-    decription: "lorem20",
     workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51q4Y+EKElL._SY344_BO1,204,203,200_.jpg",
@@ -20,9 +9,6 @@ export const booksData = [
   },
   {
     name: "Elon Musk",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/5179mrE+WWL._SX312_BO1,204,203,200_.jpg",
     buyLink:
@@ -30,9 +16,6 @@ export const booksData = [
   },
   {
     name: "Fooled by randomness",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41EwFs5ypGL._SX324_BO1,204,203,200_.jpg",
     buyLink:
@@ -40,9 +23,6 @@ export const booksData = [
   },
   {
     name: "Skin in the game",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-eu.ssl-images-amazon.com/images/I/411FDiLAiDL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     buyLink:
@@ -50,9 +30,7 @@ export const booksData = [
   },
   {
     name: "Antifragile",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
+
     imageUrl:
       "https://images-eu.ssl-images-amazon.com/images/I/515oFiycW7L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     buyLink:
@@ -60,9 +38,6 @@ export const booksData = [
   },
   {
     name: "Thinking fast and slow",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41I0fK0G9kL._SX328_BO1,204,203,200_.jpg",
     buyLink:
@@ -70,9 +45,6 @@ export const booksData = [
   },
   {
     name: "Psychology of money",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-eu.ssl-images-amazon.com/images/I/41r6F2LRf8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     buyLink:
@@ -80,9 +52,6 @@ export const booksData = [
   },
   {
     name: "Intelligent Investor",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51DLoxAJ68L._SX324_BO1,204,203,200_.jpg",
     buyLink:
@@ -90,9 +59,6 @@ export const booksData = [
   },
   {
     name: "One upon wall street",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/518dmAdu+oL._SY344_BO1,204,203,200_.jpg",
     buyLink:
@@ -100,9 +66,6 @@ export const booksData = [
   },
   {
     name: "Astrophysics for the people in hurry",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-eu.ssl-images-amazon.com/images/I/51rSk5uaqiL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     buyLink:
@@ -110,9 +73,6 @@ export const booksData = [
   },
   {
     name: "The Grand Design",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-eu.ssl-images-amazon.com/images/I/51gIWweOH8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     buyLink:
@@ -120,9 +80,6 @@ export const booksData = [
   },
   {
     name: "Brief answers of Big Questions",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-eu.ssl-images-amazon.com/images/I/41mOZ1xLFgL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
     buyLink:
@@ -130,9 +87,6 @@ export const booksData = [
   },
   {
     name: "Influence",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51fAIIVixcL._SX333_BO1,204,203,200_.jpg",
     buyLink:
@@ -140,18 +94,12 @@ export const booksData = [
   },
   {
     name: "Kafka on the shore",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl: "https://m.media-amazon.com/images/I/31fjnqvjOvL.jpg",
     buyLink:
       "https://www.amazon.in/Kafka-Shore-Vintage-Magic-Book-ebook/dp/B005TKC2P2/ref=sr_1_3?crid=2VAE7L0P5ZB0H&keywords=kafka&qid=1647714398&s=books&sprefix=kakfka%2Cstripbooks%2C194&sr=1-3",
   },
   {
     name: "Noice",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41qStCKhfVL._SX323_BO1,204,203,200_.jpg",
     buyLink:
@@ -159,9 +107,6 @@ export const booksData = [
   },
   {
     name: "Blink",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51E2Vpz1AmL._SX339_BO1,204,203,200_.jpg",
     buyLink:
@@ -169,9 +114,6 @@ export const booksData = [
   },
   {
     name: "Outliers",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41gNikCRxfL._SX324_BO1,204,203,200_.jpg",
     buyLink:
@@ -179,9 +121,6 @@ export const booksData = [
   },
   {
     name: "Principles",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41IZmTCNNzL._SX317_BO1,204,203,200_.jpg",
     buyLink:
@@ -189,9 +128,6 @@ export const booksData = [
   },
   {
     name: "A brief history of time",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51SWYYvk+KL._SX319_BO1,204,203,200_.jpg",
     buyLink:
@@ -199,9 +135,6 @@ export const booksData = [
   },
   {
     name: "Quantum",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41jO7v7Gf1L._SX298_BO1,204,203,200_.jpg",
     buyLink:
@@ -209,9 +142,6 @@ export const booksData = [
   },
   {
     name: "Schodienger's cat",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51LyuQ5aQCL._SX319_BO1,204,203,200_.jpg",
     buyLink:
@@ -219,9 +149,6 @@ export const booksData = [
   },
   {
     name: "Structures",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41d7Bg6Xb9L._SX331_BO1,204,203,200_.jpg",
     buyLink:
@@ -229,19 +156,19 @@ export const booksData = [
   },
   {
     name: "Seneca",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/510RH1nJgQL._SX326_BO1,204,203,200_.jpg",
     buyLink:
       "https://www.amazon.in/Seneca-Letters-Stoic-Penguin-Classics/dp/0140442103/ref=sr_1_3?crid=31WIPQIUP047A&keywords=seneca&qid=1647714695&sprefix=senec%2Caps%2C214&sr=8-3",
   },
   {
+    name: "Rich dad Poor dad",
+    imageUrl:
+      "https://images-na.ssl-images-amazon.com/images/I/51u8ZRDCVoL._SX330_BO1,204,203,200_.jpg",
+    buyLink: "https://www.amazon.in/Rich-Dad-Poor-Middle-Updates/dp/1612680194",
+  },
+  {
     name: "Steve Jobs",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41ZlN7iry-L._SX317_BO1,204,203,200_.jpg",
     buyLink:
@@ -249,9 +176,7 @@ export const booksData = [
   },
   {
     name: "Shoe Dog phil knight",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
+
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41K0Lnqfe4L._SX323_BO1,204,203,200_.jpg",
     buyLink:
@@ -259,9 +184,6 @@ export const booksData = [
   },
   {
     name: "Sapiens",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41yu2qXhXXL._SX324_BO1,204,203,200_.jpg",
     buyLink:
@@ -269,9 +191,6 @@ export const booksData = [
   },
   {
     name: "The Art of War",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/41-0lBgMGvL._SX323_BO1,204,203,200_.jpg",
     buyLink:
@@ -279,9 +198,7 @@ export const booksData = [
   },
   {
     name: "Zero to one",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
+
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51z7mZZKRgL._SX317_BO1,204,203,200_.jpg",
     buyLink:
@@ -289,9 +206,6 @@ export const booksData = [
   },
   {
     name: "The Puple Cow",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51zZRKFZ8ZL._SX325_BO1,204,203,200_.jpg",
     buyLink:
@@ -299,9 +213,6 @@ export const booksData = [
   },
   {
     name: "The 12 rules of life",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "OL19781711W",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/412ML1Yah7L._SX324_BO1,204,203,200_.jpg",
     buyLink:
@@ -309,9 +220,6 @@ export const booksData = [
   },
   {
     name: "Life 3.0",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/51I6gja0RzL._SX323_BO1,204,203,200_.jpg",
     buyLink:
@@ -319,9 +227,6 @@ export const booksData = [
   },
   {
     name: "The almanac of naval ravikant",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/31bDtgec8NL._SX324_BO1,204,203,200_.jpg",
     buyLink:
@@ -329,9 +234,6 @@ export const booksData = [
   },
   {
     name: "SuperIntelligence",
-    author: "kyoyski",
-    decription: "lorem20",
-    workID: "",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/519H6qwHjqL._SX328_BO1,204,203,200_.jpg",
     buyLink:

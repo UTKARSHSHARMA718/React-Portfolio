@@ -2,7 +2,7 @@
 .projectCardContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: var(--gap_2rem);
     padding: var(--padding_3rem);

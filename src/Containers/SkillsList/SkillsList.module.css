@@ -1,0 +1,25 @@
+.heading {
+  text-align: center;
+  color: var(--green4);
+  font-weight: bold;
+}
+
+.skills {
+  text-align: center;
+}
+
+.PS {
+  margin-top: var(--margin_20);
+  display: inline-block;
+  width: var(--width_320);
+  vertical-align: top;
+  color: var(--yellow1);
+  font-weight: 500;
+}
+
+@media (max-width: 764px) {
+  .PS {
+    margin-top: var(--margin_03rem);
+    width: var(--width_210);
+  }
+}

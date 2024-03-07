@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 
 import styles from "./ProjectCard.module.css";
 
-const ProjectCard = ({ name, description, isComplete, link , imgSrc}) => {
+const ProjectCard = ({ name, description, isComplete, link, imgSrc }) => {
+  const MAX_CHARACTER_TO_SHOW = 50;
+  const shouldShowEllipsis =
+    isComplete || MAX_CHARACTER_TO_SHOW < description?.length;
+
   return (
     <div className={[styles["card"], styles["workcard"]].join(" ")}>
       <img
@@ -18,8 +22,8 @@ const ProjectCard = ({ name, description, isComplete, link , imgSrc}) => {
       <div className={styles["card-body"]}>
         <h5 className={styles["card-title"]}>{name}</h5>
         <p className={styles["card-text"]}>
-          {description?.substring(0, 80)}
-          {isComplete ? "...." : ""}
+          {description?.substring(0, MAX_CHARACTER_TO_SHOW)}
+          {shouldShowEllipsis ? "...." : ""}
         </p>
         <a
           className={[
@@ -41,7 +45,7 @@ ProjectCard.defaultProps = {
   description: "",
   isComplete: false,
   link: "",
-  imgSrc:"",
+  imgSrc: "",
 };
 
 ProjectCard.propTypes = {

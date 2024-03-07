@@ -1,17 +1,21 @@
 import { React, useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import useScrollDirection from "../../customHooks/useScrollDirection";
+import useCustomNavigate from "../../customHooks/useCustomNavigate";
 import imgUrl from "../../Assets/Images/1.png";
-import { Link, useLocation } from "react-router-dom";
+import { NAV_LINKS } from "../../Constants/Const";
+import { HOME } from "../../Constants/routeNames";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
   const [canCanChangeBGColor, setCanChangeBGColor] = useState(false);
   const path = useLocation();
-  const scrollWatcherRef = useRef();
   const currentPage = path?.pathname?.slice(1);
+  const scrollWatcherRef = useRef();
   const { scrollingDirection } = useScrollDirection();
+  const { navigateTo } = useCustomNavigate();
 
   const handleClickMobile = () => {
     setMobile(!mobile);
@@ -27,6 +31,12 @@ const Navbar = () => {
 
   useEffect(() => {
     navObserver?.observe(scrollWatcherRef?.current);
+
+    return () => {
+      if (navObserver && scrollWatcherRef?.current) {
+        navObserver?.unobserve(scrollWatcherRef?.current);
+      }
+    };
   }, []);
 
   return (
@@ -38,76 +48,47 @@ const Navbar = () => {
         }`}
       >
         <div
-          className={
+          className={[
             mobile
               ? "navbar-mobile"
-              : `navbar ${canCanChangeBGColor ? "on-navbar-sticking" : ""}`
-          }
+              : `navbar ${canCanChangeBGColor ? "on-navbar-sticking" : ""}`,
+            "transition",
+          ].join(" ")}
         >
           <div className="jungle">
-            <img id="logo" src={imgUrl} alt="logo" />
-            <input type="checkbox" id="click" />
+            <img
+              id="logo"
+              src={imgUrl}
+              alt="logo"
+              onClick={() => navigateTo(HOME)}
+            />
+            <input type="checkbox" id="click" className="responsive-input" />
             <label
               htmlFor="click"
               className="barsIcon"
               onClick={handleClickMobile}
             >
-              <i class="fas fa-bars"></i>
+              {mobile ? (
+                <i class="fas fa-solid fa-xmark"></i>
+              ) : (
+                <i class="fas fa-bars"></i>
+              )}
             </label>
           </div>
-          <ul className="navLink-list">
-            <Link
-              className={`navLinks ${currentPage === "" ? "whiteColor" : ""}`}
-              to="/"
-              onClick={handleClickMobileClose}
-            >
-              Home
-            </Link>
-            <Link
-              className={`navLinks ${
-                currentPage === "blogs" ? "whiteColor" : ""
-              }`}
-              to="/blogs"
-              onClick={handleClickMobileClose}
-            >
-              Blogs
-            </Link>
-            <Link
-              className={`navLinks ${
-                currentPage === "books" ? "whiteColor" : ""
-              }`}
-              to="/books"
-              onClick={handleClickMobileClose}
-            >
-              Books Corner
-            </Link>
-            <Link
-              className={`navLinks ${
-                currentPage === "work" ? "whiteColor" : ""
-              }`}
-              to="/work"
-              onClick={handleClickMobileClose}
-            >
-              Projects
-            </Link>
-            <Link
-              className={`navLinks ${
-                currentPage === "resume" ? "whiteColor" : ""
-              }`}
-              to="/resume"
-              onClick={handleClickMobileClose}
-            >
-              Resume
-            </Link>
-            <Link
-              className={`navLinks ${
-                currentPage === "about" ? "whiteColor" : ""
-              }`}
-              to="/about"
-              onClick={handleClickMobileClose}
-            >
-              About
-            </Link>
+          <ul className={`navLink-list ${!mobile ? "display-none" : ""}`}>
+            {NAV_LINKS?.map((item) => {
+              return (
+                <Link
+                  className={`navLinks ${
+                    currentPage === item?.to?.slice(1) ? "whiteColor" : ""
+                  }`}
+                  to={item?.to}
+                  onClick={handleClickMobileClose}
+                >
+                  {item?.text}
+                </Link>
+              );
+            })}
           </ul>
         </div>
       </div>

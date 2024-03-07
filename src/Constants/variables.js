@@ -3,6 +3,7 @@ export const variables = {
   fontSize_heading: '28px',
   fontSize_sunHeading: '20px',
   fontSize_normal: '16px',
+  fontSize_18: '18px',
 
   //font-weight
   fontWeightMedium: 500,
@@ -87,6 +88,7 @@ export const variables = {
     // -> Black
     black1: "#0c0c0cs",
     black2: "black",
+    black3: "#28282B",
 
     // -> white
     white1: "white",
@@ -100,4 +102,7 @@ export const variables = {
 
     // -> blue
     blue1: "rgb(111, 175, 231)",
+
+    // -> grey
+    grey1: "rgb(46, 46, 46)",
 };

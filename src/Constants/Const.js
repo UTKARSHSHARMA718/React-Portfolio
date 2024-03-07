@@ -1,3 +1,5 @@
+import { ABOUT, BLOGS, BOOKS, HOME, RESUME, WORK } from "./routeNames";
+
 // Social profile links
 export const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/iking7sharma/";
 export const GTIHUB_PROFILE_URL = "https://github.com/UTKARSHSHARMA718";
@@ -13,9 +15,11 @@ export const HASHNODE_API = "https://gql.hashnode.com/";
 
 export const apiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
 
-export const googleBooksApi = "https://www.googleapis.com/books/v1/volumes?q=";
+export const GOOGLE_BOOKS_API_END_POINT =
+  "https://www.googleapis.com/books/v1/volumes?q=";
 
-export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
+// export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U"; // older but valid API key
+export const booksApiKey = "AIzaSyCMhVladzH31_JDJNQUzcwY6T-fm4y9buk";
 
 export const BLOGS_END_POINT = "https://supercomputing.hashnode.dev/";
 
@@ -24,4 +28,179 @@ export const GENERAL_ERROR_TEXT = "Something went wrong!";
 export const ERROR_OCCURED = "Error Occurred";
 
 // variables for specific purpose
-export const CHARACTERS_TO_BE_SHOWN = 120;
+export const CHARACTERS_TO_BE_SHOWN = 100;
+
+//moving particles
+export const particlesOptions = {
+  particles: {
+    number: {
+      value: 104,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    color: {
+      value: "#ffffff",
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+      polygon: {
+        nb_sides: 5,
+      },
+      image: {
+        src: "img/github.svg",
+        width: 100,
+        height: 100,
+      },
+    },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false,
+      },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 40,
+        size_min: 0.1,
+        sync: false,
+      },
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#42f55d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse",
+      },
+      onclick: {
+        enable: true,
+        mode: "push",
+      },
+      resize: true,
+    },
+    modes: {
+      grab: {
+        distance: 400,
+        line_linked: {
+          opacity: 1,
+        },
+      },
+      bubble: {
+        distance: 400,
+        size: 40,
+        duration: 2,
+        opacity: 8,
+        speed: 3,
+      },
+      repulse: {
+        distance: 200,
+        duration: 0.4,
+      },
+      push: {
+        particles_nb: 4,
+      },
+      remove: {
+        particles_nb: 2,
+      },
+    },
+  },
+  retina_detect: true,
+};
+
+export const MY_PROFILE_DESCRIPTIONS = ` Hi, Nice to meet you I'm Utkarsh Sharma, a 22 year-old web & app
+developer ,who also have interest in Graphic designing and video
+editing.Currently pursuing Bachelors in Information technology from
+IMS Engineering College,Ghaziabd. I enjoy reading books since it is
+one of the best possible source of information, I mostly read
+related to Physics ,Business,Startups, Psychology and Tech.`;
+
+export const PROGRAMMING_SKILLS = {
+  group1: [
+    "React JS",
+    "Javascript",
+    "Tailwind",
+    "Next JS",
+    "Typescript",
+    "Express JS",
+    "Node JS",
+    "SQL",
+    "Ant design",
+    "Material UI",
+  ],
+  group2: [
+    "CSS",
+    "C",
+    "Docker",
+    "Mongo DB",
+    "Html",
+    "Java",
+    "Boostrap",
+    "React-Native",
+  ],
+};
+
+export const NON_TECHNICAL_SKILL = {
+  group1: ["Photoshop", "Illustrator"],
+};
+
+export const NAV_LINKS = [
+  {
+    text: "Home",
+    to: HOME,
+  },
+  {
+    text: "Blogs",
+    to: BLOGS,
+  },
+  {
+    text: "Books Corner",
+    to: BOOKS,
+  },
+  {
+    text: "Projects",
+    to: WORK,
+  },
+  {
+    text: "Resume",
+    to: RESUME,
+  },
+  {
+    text: "About",
+    to: ABOUT,
+  },
+];

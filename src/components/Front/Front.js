@@ -1,12 +1,12 @@
 import React from "react";
-import "../index.css";
-import "./Front.css";
+import { motion } from "framer-motion";
 
 import Particles from "react-tsparticles";
 // import { loadFull } from "tsparticles";
 import $ from "jquery";
 import jQuery from "jquery";
-import { motion } from "framer-motion";
+import "./Front.css";
+import "../index.css";
 
 const Front = (props) => {
   jQuery(document).ready(function () {
@@ -37,10 +37,11 @@ const Front = (props) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
+      style={{ flex: 1, display: "flex" }}
     >
       <div className="welcome">
         <div class="content">
-          <h1 className="introduction">Hi,I am</h1>
+          <h1 className="introduction">Hi, I'm</h1>
           <h1 className="introduction">Utkarsh Sharma</h1>
           <h1 className="introduction">A software Engineer</h1>
         </div>

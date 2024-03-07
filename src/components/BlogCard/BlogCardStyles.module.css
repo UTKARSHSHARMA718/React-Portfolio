@@ -1,8 +1,8 @@
 .card {
   max-width: var(--width_20vw);
   max-height: var(--height_50vh);
+  height: 50vh;
   min-width: var(--width_300);
-  background-color: var(--black1);
   border-radius: var(--radisu_16);
   padding: var(--padding_24);
   display: flex;
@@ -10,7 +10,18 @@
   gap: var(--gap_32);
   border: var(--radisu_2) solid var(--green1);
   overflow: hidden;
-  transition: all 1 ease;
+  background-color: var(--grey1);
+  transition: 0.5s;
+}
+
+.descriptionContainer {
+  background-color: var(--black3);
+  padding: 16px;
+  border-radius: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
@@ -19,15 +30,34 @@
 }
 
 .images {
-  max-width: var(--width_200);
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
+  font-weight: 500;
   gap: var(--gap_24);
+  flex: 1;
 }
 
 a {
   text-decoration: none;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media (max-width: 1500px) {
+  .card {
+    gap: 16px;
+  }
+
+  .card-body {
+    gap: 12px;
+  }
 }
