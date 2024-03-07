@@ -1,4 +1,11 @@
 import { ABOUT, BLOGS, BOOKS, HOME, RESUME, WORK } from "./routeNames";
+import {
+  faGithub,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faHashnode,
+} from "@fortawesome/free-brands-svg-icons";
 
 // Social profile links
 export const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/iking7sharma/";
@@ -142,12 +149,12 @@ export const particlesOptions = {
   retina_detect: true,
 };
 
-export const MY_PROFILE_DESCRIPTIONS = ` Hi, Nice to meet you I'm Utkarsh Sharma, a 22 year-old web & app
-developer ,who also have interest in Graphic designing and video
-editing.Currently pursuing Bachelors in Information technology from
-IMS Engineering College,Ghaziabd. I enjoy reading books since it is
-one of the best possible source of information, I mostly read
-related to Physics ,Business,Startups, Psychology and Tech.`;
+export const MY_PROFILE_DESCRIPTIONS = ` Hello, pleased to meet you. I'm Utkarsh Sharma, 
+a 22-year-old Web developer with a keen interest in graphic design and video editing. 
+I've recently completed my Bachelor's in Information Technology from Dr. A. P. J. Abdul Kalam Technical University, Lucknow. 
+I find immense joy in expanding my knowledge through various channels, with a particular passion for reading.
+My diverse reading interests reflect my insatiable curiosity and drive for excellence as an engineer. I believe in leveraging books as a catalyst for continuous learning and innovation,
+ honing my skills to deliver exceptional results in any organizational setting.`;
 
 export const PROGRAMMING_SKILLS = {
   group1: [
@@ -203,4 +210,16 @@ export const NAV_LINKS = [
     text: "About",
     to: ABOUT,
   },
+];
+
+export const SOCIAL_ICONS = [
+  {
+    href: GTIHUB_PROFILE_URL,
+    icon: faGithub,
+  },
+  { href: TWITTER_PROFILE_URL, icon: faTwitter },
+  { href: LINKEDIN_PROFILE_URL, icon: faLinkedin },
+  { href: HASHNODE_PROFILE_URL, icon: faHashnode },
+  { href: INSTAGRAM_PROFILE_URL, icon: faInstagram },
+  // { href: GTIHUB_PROFILE_URL, icon: faYoutube }, // might be needed later
 ];

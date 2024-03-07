@@ -9,18 +9,20 @@ const BlogCard = ({ post }) => {
   const url = coverImage?.url || "";
 
   return (
-    <a href={`${BLOGS_END_POINT}${slug}`}>
+    <a href={`${BLOGS_END_POINT}${slug}`} className={styles.parentContainer}>
       <div className={styles["card"]}>
         <div className={styles["imgCard"]}>
           <img src={url} className={styles["images"]} alt="blogs-image" />
         </div>
         <div className={styles["card-body"]}>
-          <h5 className={styles["card-title"]} id="title">
-            {getTrimmedText({ text: title, limit: 21 })}
-          </h5>
+          <div className={styles.headingContainer}>
+            <h5 className={styles["card-title"]} id="title">
+              {getTrimmedText({ text: title, limit: 21 })}
+            </h5>
+          </div>
           <div className={styles["descriptionContainer"]}>
             <p className={styles["card-text"]} style={{ color: "white" }}>
-              {getTrimmedText({ text: brief, limit: 80 })}...
+              {getTrimmedText({ text: brief, limit: 70 })}...
             </p>
           </div>
         </div>

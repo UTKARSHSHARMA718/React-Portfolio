@@ -12,8 +12,8 @@ h1 {
 
 .blogs-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  /*align-items: center; */ /* To make all the divs take equal height irrespective of content they have*/
   gap: 32px;
   flex-wrap: wrap;
   padding: 24px;

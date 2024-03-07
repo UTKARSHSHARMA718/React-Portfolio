@@ -2,14 +2,21 @@ h6 {
   text-align: center;
 }
 
+.socialsIconsContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
 .socials {
   margin-left: auto;
   margin-right: auto;
 }
 
-#footer {
-  /* position: absolute; */
-  bottom: 0;
+.footer {
   height: 60px;
   width: 100%;
   color: chartreuse;
@@ -20,10 +27,10 @@ h6 {
   margin-top: auto; /* for making footer stick to the bottom. */
 }
 
-#footer a {
+.footer a {
   color: chartreuse;
 }
 
-#footer a:hover {
+.footer a:hover {
   color: white;
 }
