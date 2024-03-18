@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-
 import Particles from "react-tsparticles";
-import { ERROR_OCCURED, GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+
 import BlogCard from "../BlogCard/BlogCard";
 import CustomLoader from "../CustomLoader/CustomLoader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import { ERROR_OCCURED, GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
 import styles from "./Blogs.module.css";
 
 const HASHNODE_POST_QUERY = `
@@ -32,10 +33,13 @@ query User($username: String!, $page: Int!, $pageSize: Int!) {
 `;
 
 const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
+  const { t } = useTranslation();
+
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // TODO: use useFetch hook here
   const fetchData = async () => {
     setIsLoading(true);
     setError("");
@@ -81,10 +85,10 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
     >
       {!isLoading && !error && (
         <>
-          <h1 className={styles["heading"]}>My Blogs</h1>
+          <h1 className={styles["heading"]}>{t('my')} {t('blogs')}</h1>
           <div className={styles["blogs-container"]}>
-            {data?.map((post) => (
-              <BlogCard post={post?.node} key={post?._id} />
+            {data?.map((post, index) => (
+              <BlogCard post={post?.node} key={index} />
             ))}
           </div>
         </>

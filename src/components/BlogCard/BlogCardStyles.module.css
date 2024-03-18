@@ -9,7 +9,6 @@
   min-height: 30vh;
   max-height: 500px;
   height: 100%;
-  /* flex: 1; */
   min-width: var(--width_300);
   border-radius: var(--radisu_16);
   padding: var(--padding_24);

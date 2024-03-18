@@ -1,0 +1,40 @@
+.parentContainer{
+    position: relative;
+}
+
+.container::before,
+.container::after {
+  position: absolute;
+  left: 50%;
+  top: -0.25rem;
+  scale: 0;
+  transform: translateX(-50%) translateY(-100%) scale(1);
+  transition: 0.25s;
+  transform-origin: bottom center;
+}
+
+.container::before {
+  content: attr(datatooltip);
+  width: max-content;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: rgb(168, 168, 168);
+  font-weight: 500;
+  color: white;
+  z-index: 100;
+}
+
+.container:hover::after,
+.container:hover::before {
+  scale: 1;
+}
+
+/* style for small pointy arrow (does not work as of now)*/
+/* .container::after {
+  content: "";
+  z-index: 10;
+  border: 10px solid transparent;
+  border-top-color: rgb(168, 168, 168);
+} */

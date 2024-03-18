@@ -1,5 +1,6 @@
 import React from "react";
 
+import ToolTip from "../ToolTip/ToolTip";
 import { BLOGS_END_POINT } from "../../Constants/Const";
 import { getTrimmedText } from "../../utils/util";
 import styles from "./BlogCardStyles.module.css";
@@ -16,9 +17,11 @@ const BlogCard = ({ post }) => {
         </div>
         <div className={styles["card-body"]}>
           <div className={styles.headingContainer}>
-            <h5 className={styles["card-title"]} id="title">
-              {getTrimmedText({ text: title, limit: 21 })}
-            </h5>
+            <ToolTip data={title}>
+              <h5 className={styles["card-title"]} id="title">
+                {getTrimmedText({ text: title, limit: 21 })}
+              </h5>
+            </ToolTip>
           </div>
           <div className={styles["descriptionContainer"]}>
             <p className={styles["card-text"]} style={{ color: "white" }}>

@@ -1,5 +1,9 @@
 /* TODO: Refactor styles */
 
+.headingContainer {
+  padding-top: 24px;
+}
+
 .workcard {
   width: 19rem;
   height: 370px;
@@ -70,15 +74,16 @@ h5 {
 
 h2 {
   text-align: center;
+  font-weight: 600;
+  font-family: poppins;
   color: rgb(241, 38, 241);
-  text-shadow: 2px 2px 21px rgb(255, 183, 255);
 }
 
 h1 {
   color: greenyellow;
 }
 
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,8 +91,18 @@ h1 {
   padding: 16px;
 }
 
+/* TODO: correct the className */
 .hcj {
   background-color: crimson;
+}
+
+.projectsGroupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0px;
 }
 
 @media (max-width: 768px) {

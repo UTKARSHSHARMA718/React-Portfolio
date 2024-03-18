@@ -1,12 +1,15 @@
 import React from "react";
+import Particles from "react-tsparticles";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-import Particles from "react-tsparticles";
 import demoResumeImage from "./resumeImage.jpg";
 import resume from "./Utkarsh Resume.pdf";
 import "./resume.css";
 
 const Resume = (props) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div
@@ -16,7 +19,7 @@ const Resume = (props) => {
         transition={{ duration: 1.5 }}
       >
         <div className="container">
-          <h1>Resume</h1>
+          <h1>{t("resume")}</h1>
           <div className="resumeImg">
             <img src={demoResumeImage} alt="" className="img_of_resume" />
             <a
@@ -25,7 +28,7 @@ const Resume = (props) => {
               className="downloadButton fa fa-download"
             >
               {" "}
-              Download
+              {t("download")}
             </a>
           </div>
         </div>
