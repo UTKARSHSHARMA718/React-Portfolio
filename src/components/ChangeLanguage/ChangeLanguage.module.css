@@ -1,0 +1,17 @@
+.container {
+  padding: 4px 2px;
+  border-radius: 8px;
+  background-color: #a8f7a84f;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.option {
+  background-color: black;
+  font-weight: 500;
+  color: wheat;
+  padding: 8px;
+  border-radius: 4px;
+  /* cursor: pointer !important; (not-working)*/
+}

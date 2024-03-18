@@ -8,14 +8,6 @@
   font-weight: 500;
 }
 
-.formContainer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap_16);
-  background-color: var(--black3);
-  border-radius: 12px;
-}
-
 .profilePic {
   max-height: var(--height_250);
 }
@@ -65,45 +57,6 @@
 
 .skills {
   text-align: center;
-}
-
-form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--width_30rem);
-  color: var(--white1);
-  margin-bottom: var(--margin_5rem);
-  padding: var(--padding_24);
-}
-
-#form-submit {
-  margin-top: var(--margin_1rem);
-  background-color: var(--green3);
-  color: var(--black2);
-}
-
-.form-group {
-  justify-content: start;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: var(--fullWidth);
-  gap: var(--gap_8);
-}
-
-.fullWidth {
-  width: var(--fullWidth);
-}
-
-.bottomText {
-  align-self: flex-start;
-  opacity: 0.6;
-}
-
-.textArea {
-  width: var(--fullWidth);
-  padding: var(--padding_8);
 }
 
 .descriptionAndSkillContainer {

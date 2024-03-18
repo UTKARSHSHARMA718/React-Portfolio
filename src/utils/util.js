@@ -13,3 +13,13 @@ export const getValueFromBooksData = ({ name, attribute }) => {
   );
   return book[0]?.[attribute];
 };
+
+export const filterData = ({ originalData, keyName="", dataToFind }) => {
+  const filteredResult = originalData?.filter((item) => {
+    if (keyName) {
+      return item?.[keyName]?.toLowerCase().includes(dataToFind?.toLowerCase());
+    }
+    return item?.toLowerCase().includes(dataToFind?.toLowerCase());
+  });
+  return filteredResult;
+};

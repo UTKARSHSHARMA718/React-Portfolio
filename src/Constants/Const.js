@@ -149,13 +149,6 @@ export const particlesOptions = {
   retina_detect: true,
 };
 
-export const MY_PROFILE_DESCRIPTIONS = ` Hello, pleased to meet you. I'm Utkarsh Sharma, 
-a 22-year-old Web developer with a keen interest in graphic design and video editing. 
-I've recently completed my Bachelor's in Information Technology from Dr. A. P. J. Abdul Kalam Technical University, Lucknow. 
-I find immense joy in expanding my knowledge through various channels, with a particular passion for reading.
-My diverse reading interests reflect my insatiable curiosity and drive for excellence as an engineer. I believe in leveraging books as a catalyst for continuous learning and innovation,
- honing my skills to deliver exceptional results in any organizational setting.`;
-
 export const PROGRAMMING_SKILLS = {
   group1: [
     "React JS",
@@ -187,39 +180,63 @@ export const NON_TECHNICAL_SKILL = {
 
 export const NAV_LINKS = [
   {
-    text: "Home",
+    text: "home",
     to: HOME,
   },
   {
-    text: "Blogs",
+    text: "blogs",
     to: BLOGS,
   },
   {
-    text: "Books Corner",
+    text: "books_corner",
     to: BOOKS,
   },
   {
-    text: "Projects",
+    text: "projects",
     to: WORK,
   },
   {
-    text: "Resume",
+    text: "resume",
     to: RESUME,
   },
   {
-    text: "About",
+    text: "about",
     to: ABOUT,
   },
 ];
 
 export const SOCIAL_ICONS = [
   {
+    label: "Github",
     href: GTIHUB_PROFILE_URL,
     icon: faGithub,
   },
-  { href: TWITTER_PROFILE_URL, icon: faTwitter },
-  { href: LINKEDIN_PROFILE_URL, icon: faLinkedin },
-  { href: HASHNODE_PROFILE_URL, icon: faHashnode },
-  { href: INSTAGRAM_PROFILE_URL, icon: faInstagram },
+  { href: TWITTER_PROFILE_URL, icon: faTwitter, label: "Twitter" },
+  { href: LINKEDIN_PROFILE_URL, icon: faLinkedin, label: "LinkedIn" },
+  { href: HASHNODE_PROFILE_URL, icon: faHashnode, label: "Hashnode" },
+  { href: INSTAGRAM_PROFILE_URL, icon: faInstagram, label: "Instagram" },
   // { href: GTIHUB_PROFILE_URL, icon: faYoutube }, // might be needed later
 ];
+
+export const BOOK_SEARCH_QUERY = "book-search";
+
+export const LANGUAGES = [
+  {
+    label: "English",
+    value: "en",
+  },
+  {
+    label: "Hindi",
+    value: "hi",
+  },
+  {
+    label: "Spanish",
+    value: "sp",
+  },
+  {
+    label: "Mandarin",
+    value: "man",
+  },
+];
+
+export const LANGUAGE = "i18nextLng";

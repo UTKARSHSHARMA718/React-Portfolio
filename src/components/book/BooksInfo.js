@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import Particles from "react-tsparticles";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import CustomLoader from "../CustomLoader/CustomLoader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
@@ -14,6 +15,7 @@ import { BOOKS } from "../../Constants/routeNames";
 import "./bookinfo.css";
 
 const BooksInfo = (props) => {
+  const { t } = useTranslation();
   const params = useParams();
   const { navigateTo } = useCustomNavigate();
   const { name } = params;
@@ -101,7 +103,7 @@ const BooksInfo = (props) => {
                 </p>
                 <div className="categoriesContainer">
                   <p className="categories">
-                    Category:{" "}
+                    {t("category")}:{" "}
                     {bookInfo?.categories ? bookInfo?.categories : "Not found"}
                   </p>
                 </div>
@@ -113,11 +115,11 @@ const BooksInfo = (props) => {
                     href={bookInfo?.previewLink}
                     target="_blank"
                   >
-                    See Preview
+                    {t("see_preview")}
                   </a>
                   {!!bookBuyLink && (
                     <a className="buyLink" href={bookBuyLink} target="_blank">
-                      Purchase Book
+                      {t("purchase_books")}
                     </a>
                   )}
                 </div>
@@ -127,7 +129,7 @@ const BooksInfo = (props) => {
             <div className="backBtnContainer">
               <button className="BackButton" onClick={() => navigateTo(BOOKS)}>
                 <LeftArrow className="leftArrowImage" />
-                <p>Go Back</p>
+                <p>{t("go_back")}</p>
               </button>
             </div>
           </div>

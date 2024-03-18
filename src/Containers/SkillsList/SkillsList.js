@@ -16,7 +16,7 @@ const SkillsList = ({
         <div className={styles.PS}>
           <ul>
             {data?.map((skill) => {
-              return <li>{skill}</li>
+              return <li key={skill}>{skill}</li>
             })}
           </ul>
         </div>
@@ -24,7 +24,7 @@ const SkillsList = ({
           <div className={styles.PS}>
             <ul>
               {data2?.map((skill) => {
-                return <li>{skill}</li>
+                return <li key={skill}>{skill}</li>
               })}
             </ul>
           </div>

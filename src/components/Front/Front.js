@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import Particles from "react-tsparticles";
 // import { loadFull } from "tsparticles";
@@ -9,6 +10,8 @@ import "./Front.css";
 import "../index.css";
 
 const Front = (props) => {
+  const {t}=useTranslation();
+
   jQuery(document).ready(function () {
     $("h1").mousemove(function (e) {
       var rXP = e.pageX - this.offsetLeft - $(this).width() / 2;
@@ -40,10 +43,15 @@ const Front = (props) => {
       style={{ flex: 1, display: "flex" }}
     >
       <div className="welcome">
-        <div class="content">
-          <h1 className="introduction">Hi, I'm</h1>
-          <h1 className="introduction">Utkarsh Sharma</h1>
-          <h1 className="introduction">A software Engineer</h1>
+        <div className="content">
+          <h1 className="introduction">
+            {t("hi")} {t("im")}
+          </h1>
+          <h1 className="introduction">
+            {/* TODO: bring them inside single kay value */}
+            {t("utkarsh")} {t("sharma")}
+          </h1>
+          <h1 className="introduction">{t("mini_intro")}</h1>
         </div>
       </div>
       <Particles

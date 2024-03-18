@@ -1,11 +1,25 @@
+.projectCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_2rem);
+  padding: var(--padding_3rem);
+  background: linear-gradient(0deg, rgba(34, 192, 195, 0.295) 18%, rgba(253, 187, 45, 0.363) 90%);
+  width: 90%;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px 1px white;
+}
 
-.projectCardContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap_2rem);
-    padding: var(--padding_3rem);
+.backgroundStylesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headingContainer{
+  padding: 24px 0px;
 }
 
 @media (max-width: 767px) {
@@ -13,7 +27,7 @@
     margin-top: var(--margin_20);
   }
 
-  .projectCardContainer{
+  .projectCardContainer {
     justify-content: center;
   }
 }

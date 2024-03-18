@@ -6,7 +6,7 @@ import styles from "./CustomLoaderStyles.module.css";
 const CustomLoader = ({ size = "medium" }) => {
   return (
     <div
-      class={[
+      className={[
         styles.loaderContainer,
         size === "small" ? styles.height20vh : "",
       ].join(" ")}

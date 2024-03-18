@@ -1,6 +1,8 @@
 import { React, useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
+import ChangeLanguage from "../ChangeLanguage/ChangeLanguage";
 import useScrollDirection from "../../customHooks/useScrollDirection";
 import useCustomNavigate from "../../customHooks/useCustomNavigate";
 import imgUrl from "../../Assets/Images/1.png";
@@ -9,11 +11,14 @@ import { HOME } from "../../Constants/routeNames";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const scrollWatcherRef = useRef();
+  const path = useLocation();
+  const { t } = useTranslation();
+
   const [mobile, setMobile] = useState(false);
   const [canCanChangeBGColor, setCanChangeBGColor] = useState(false);
-  const path = useLocation();
   const currentPage = path?.pathname?.slice(1);
-  const scrollWatcherRef = useRef();
+
   const { scrollingDirection } = useScrollDirection();
   const { navigateTo } = useCustomNavigate();
 
@@ -69,9 +74,9 @@ const Navbar = () => {
               onClick={handleClickMobile}
             >
               {mobile ? (
-                <i class="fas fa-solid fa-xmark"></i>
+                <i className="fas fa-solid fa-xmark"></i>
               ) : (
-                <i class="fas fa-bars"></i>
+                <i className="fas fa-bars"></i>
               )}
             </label>
           </div>
@@ -83,12 +88,14 @@ const Navbar = () => {
                     currentPage === item?.to?.slice(1) ? "whiteColor" : ""
                   }`}
                   to={item?.to}
+                  key={item?.to}
                   onClick={handleClickMobileClose}
                 >
-                  {item?.text}
+                  {t(item?.text)}
                 </Link>
               );
             })}
+            <ChangeLanguage />
           </ul>
         </div>
       </div>

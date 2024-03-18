@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 import styles from "./ProjectCard.module.css";
 
 const ProjectCard = ({ name, description, isComplete, link, imgSrc }) => {
+  const { t } = useTranslation();
+
   const MAX_CHARACTER_TO_SHOW = 50;
   const shouldShowEllipsis =
     isComplete || MAX_CHARACTER_TO_SHOW < description?.length;
@@ -33,7 +36,7 @@ const ProjectCard = ({ name, description, isComplete, link, imgSrc }) => {
           ].join(" ")}
           href={link}
         >
-          See
+          {t("see")}
         </a>
       </div>
     </div>
