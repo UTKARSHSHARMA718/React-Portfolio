@@ -14,7 +14,7 @@
 }
 
 .container::before {
-  content: attr(dataToolTip);
+  content: attr(datatooltip);
   width: max-content;
   max-width: 100%;
   min-width: 100px;

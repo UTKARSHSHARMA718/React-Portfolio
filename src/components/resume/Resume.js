@@ -1,7 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import Particles from "react-tsparticles";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 import demoResumeImage from "./resumeImage.jpg";
 import resume from "./Utkarsh Resume.pdf";

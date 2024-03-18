@@ -6,7 +6,7 @@ const ToolTip = ({ children, data }) => {
   
   return (
     <div className={styles.parentContainer}>
-      <div dataToolTip={data} className={styles.container}>
+      <div datatooltip={data} className={styles.container}>
         {children}
       </div>
     </div>
