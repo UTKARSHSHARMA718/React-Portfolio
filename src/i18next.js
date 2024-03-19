@@ -1,18 +1,29 @@
+import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { initReactI18next } from "react-i18next";
+
+import { filterData } from "./utils/util";
+import { LANGUAGE, LANGUAGES } from "./Constants/Const";
 
 const options = {
   order: ["localStorage"],
   // lookupLocalStorage: LANGUAGE,
 };
 
+const valueFromLocalStorage = localStorage?.getItem(LANGUAGE);
+
+const currentLanguage = filterData({
+  originalData: LANGUAGES,
+  dataToFind: valueFromLocalStorage,
+  keyName: "value",
+});
+
 i18n
   ?.use(LanguageDetector)
   ?.use(initReactI18next)
   ?.init({
     detection: options,
-    // lng: "en", <-- let it turned off inorder to detect the language using LanguageDetector
+    lng: currentLanguage?.length ? valueFromLocalStorage : "en", //<-- let it turned off inorder to detect the language using LanguageDetector
     fallback: "en",
     interpolation: {
       escapeValue: false,

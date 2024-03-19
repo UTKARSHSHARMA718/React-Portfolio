@@ -17,7 +17,7 @@
   content: attr(datatooltip);
   width: max-content;
   max-width: 100%;
-  min-width: 100px;
+  min-width: 120px;
   padding: 4px 8px;
   border-radius: 8px;
   background-color: rgb(168, 168, 168);

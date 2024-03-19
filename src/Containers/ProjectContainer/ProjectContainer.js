@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import TiltEffectContainer from "../../components/TiltEffectContainer/TiltEffectContainer";
 import styles from "./ProjectContainer.module.css";
 
 const ProjectContainer = ({ data, title }) => {
@@ -24,14 +25,15 @@ const ProjectContainer = ({ data, title }) => {
         <div className={styles.projectCardContainer}>
           {data?.map((project) => {
             return (
-              <ProjectCard
-                key={project?.imgLink}
-                name={t(project?.name)}
-                description={t(project?.description)}
-                link={project?.viewLink}
-                isComplete={!project?.isDescriptionComplete}
-                imgSrc={project?.imgLink}
-              />
+              <TiltEffectContainer key={project?.imgLink}>
+                <ProjectCard
+                  name={t(project?.name)}
+                  description={t(project?.description)}
+                  link={project?.viewLink}
+                  isComplete={!project?.isDescriptionComplete}
+                  imgSrc={project?.imgLink}
+                />
+              </TiltEffectContainer>
             );
           })}
         </div>
