@@ -6,7 +6,12 @@ import { motion } from "framer-motion";
 import BlogCard from "../BlogCard/BlogCard";
 import CustomLoader from "../CustomLoader/CustomLoader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import { ERROR_OCCURED, GENERAL_ERROR_TEXT, HASHNODE_API } from "../../Constants/Const";
+import TiltEffectContainer from "../TiltEffectContainer/TiltEffectContainer";
+import {
+  ERROR_OCCURED,
+  GENERAL_ERROR_TEXT,
+  HASHNODE_API,
+} from "../../Constants/Const";
 import styles from "./Blogs.module.css";
 
 const HASHNODE_POST_QUERY = `
@@ -85,10 +90,14 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
     >
       {!isLoading && !error && (
         <>
-          <h1 className={styles["heading"]}>{t('my')} {t('blogs')}</h1>
+          <h1 className={styles["heading"]}>
+            {t("my")} {t("blogs")}
+          </h1>
           <div className={styles["blogs-container"]}>
             {data?.map((post, index) => (
-              <BlogCard post={post?.node} key={index} />
+              <TiltEffectContainer key={index}>
+                <BlogCard post={post?.node} />
+              </TiltEffectContainer>
             ))}
           </div>
         </>

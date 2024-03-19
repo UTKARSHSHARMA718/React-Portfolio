@@ -3,9 +3,10 @@ import Particles from "react-tsparticles";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-import demoResumeImage from "./resumeImage.jpg";
+import TiltEffectContainer from "../TiltEffectContainer/TiltEffectContainer";
 import resume from "./Utkarsh Resume.pdf";
-import "./resume.css";
+import resumeImage from "./resumeImage.jpg";
+import styles from "./resume.module.css";
 
 const Resume = (props) => {
   const { t } = useTranslation();
@@ -18,19 +19,21 @@ const Resume = (props) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <div className="container">
+        <div className={styles.container}>
           <h1>{t("resume")}</h1>
-          <div className="resumeImg">
-            <img src={demoResumeImage} alt="" className="img_of_resume" />
-            <a
-              href={resume}
-              download="Utkarsh Sharma Resume"
-              className="downloadButton fa fa-download"
-            >
-              {" "}
-              {t("download")}
-            </a>
-          </div>
+          <TiltEffectContainer>
+            <div className={styles.resumeImgContainer}>
+              <img src={resumeImage} alt="" className={styles.resumeImage} />
+            </div>
+          </TiltEffectContainer>
+          <a
+            href={resume}
+            download="Utkarsh Sharma Resume"
+            className={[styles.downloadButton, "fa fa-download"].join(" ")}
+          >
+            {" "}
+            {t("download")}
+          </a>
         </div>
         <Particles
           id="tsparticles"

@@ -15,7 +15,7 @@ const ChangeLanguage = () => {
   };
 
   useEffect(() => {
-    const value = localStorage?.getItem(LANGUAGE);
+    const value = localStorage?.getItem(LANGUAGE) || "en";
     if (
       value &&
       filterData({
