@@ -24,4 +24,8 @@ h1 {
   margin: 24px 0px;
 }
 
-
+@media (max-width: 768px) {
+  .blogs-container {
+    justify-content: center;
+  }
+}
