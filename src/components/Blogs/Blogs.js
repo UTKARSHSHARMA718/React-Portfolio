@@ -8,6 +8,7 @@ import CustomLoader from "../CustomLoader/CustomLoader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import TiltEffectContainer from "../TiltEffectContainer/TiltEffectContainer";
 import {
+  BLOGS_END_POINT,
   ERROR_OCCURED,
   GENERAL_ERROR_TEXT,
   HASHNODE_API,
@@ -95,7 +96,7 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
           </h1>
           <div className={styles["blogs-container"]}>
             {data?.map((post, index) => (
-              <TiltEffectContainer key={index}>
+              <TiltEffectContainer key={index} href={`${BLOGS_END_POINT}${post?.node?.slug}`} isLink>
                 <BlogCard post={post?.node} />
               </TiltEffectContainer>
             ))}

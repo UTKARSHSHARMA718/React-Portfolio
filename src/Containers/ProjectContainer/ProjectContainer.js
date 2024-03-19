@@ -25,11 +25,14 @@ const ProjectContainer = ({ data, title }) => {
         <div className={styles.projectCardContainer}>
           {data?.map((project) => {
             return (
-              <TiltEffectContainer key={project?.imgLink}>
+              <TiltEffectContainer
+                key={project?.imgLink}
+                isLink
+                href={project?.viewLink}
+              >
                 <ProjectCard
                   name={t(project?.name)}
                   description={t(project?.description)}
-                  link={project?.viewLink}
                   isComplete={!project?.isDescriptionComplete}
                   imgSrc={project?.imgLink}
                 />
