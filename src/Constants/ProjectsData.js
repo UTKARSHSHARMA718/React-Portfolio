@@ -23,8 +23,8 @@ import MambaBookings_NextJs from "../Assets/Work related assets/images/Mamba Boo
 
 export const PROJECT_DATA_HTML_CSS_JAVASCRIPT = [
   {
-    name: "Summarizer",
-    description: "A chrome extension",
+    name: "summarizer_name",
+    description: "summarizer_desc",
     isDescriptionComplete: false,
     viewLink: "https://github.com/UTKARSHSHARMA718/Chrome-extension",
     imgLink: Summarizer,
@@ -197,4 +197,12 @@ export const PROJECT_DATA_NETXJS = [
     viewLink: "https://github.com/UTKARSHSHARMA718/Mamba-Bookings",
     imgLink: MambaBookings_NextJs,
   },
+];
+
+export const PROJECTS_DETAILS = [
+  { title: "html_css_javascript", data: PROJECT_DATA_HTML_CSS_JAVASCRIPT },
+  { title: "reactjs", data: PROJECT_DATA_REACTJS },
+  { title: "react_native", data: PROJECT_DATA_REACT_NATIVE },
+  { title: "mern", data: PROJECT_DATA_MERN },
+  { title: "nextjs", data: PROJECT_DATA_NETXJS },
 ];
