@@ -1,16 +1,15 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
-
-import Particles from "react-tsparticles";
-// import { loadFull } from "tsparticles";
 import $ from "jquery";
 import jQuery from "jquery";
-import "./Front.css";
+import { useTranslation } from "react-i18next";
+
+// import { loadFull } from "tsparticles";
+import withParticals from "../../HOC/withParticals/withParticals";
+import styles from './Front.module.css'
 import "../index.css";
 
-const Front = (props) => {
-  const {t}=useTranslation();
+const Front = () => {
+  const { t } = useTranslation();
 
   jQuery(document).ready(function () {
     $("h1").mousemove(function (e) {
@@ -35,33 +34,21 @@ const Front = (props) => {
   });
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
-      style={{ flex: 1, display: "flex" }}
-    >
-      <div className="welcome">
-        <div className="content">
-          <h1 className="introduction">
+    <div className={styles.container}>
+      <div className={styles.welcome}>
+        <div className={styles.content}>
+          <h1 className={styles.introduction}>
             {t("hi")} {t("im")}
           </h1>
-          <h1 className="introduction">
+          <h1 className={styles.introduction}>
             {/* TODO: bring them inside single kay value */}
             {t("utkarsh")} {t("sharma")}
           </h1>
-          <h1 className="introduction">{t("mini_intro")}</h1>
+          <h1 className={styles.introduction}>{t("mini_intro")}</h1>
         </div>
       </div>
-      <Particles
-        id="tsparticles"
-        init={props.particlesInit}
-        loaded={props.particlesLoaded}
-        options={props.particlesOptions}
-      />
-    </motion.div>
+    </div>
   );
 };
 
-export default Front;
+export default withParticals(Front);

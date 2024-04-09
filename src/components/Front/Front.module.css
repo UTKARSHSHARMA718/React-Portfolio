@@ -1,3 +1,11 @@
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -22,7 +30,7 @@
   .socials {
     padding-right: var(--padding_4);
   }
- 
+
   .introduction {
     font-size: var(--fontSize_18);
   }

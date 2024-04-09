@@ -17,8 +17,18 @@ import todoi from "../Assets/Work related assets/images/quiz.PNG";
 import sav from "../Assets/Work related assets/images/sav.PNG";
 import notebook from "../Assets/Work related assets/images/notebook.PNG";
 import social from "../Assets/Work related assets/images/social.jpeg";
+import Summarizer from "../Assets/Work related assets/images/Summarizer.PNG";
+import Netflix_NextJs from "../Assets/Work related assets/images/Netflix.PNG";
+import MambaBookings_NextJs from "../Assets/Work related assets/images/Mamba Bookings.PNG";
 
 export const PROJECT_DATA_HTML_CSS_JAVASCRIPT = [
+  {
+    name: "Summarizer",
+    description: "A chrome extension",
+    isDescriptionComplete: false,
+    viewLink: "https://github.com/UTKARSHSHARMA718/Chrome-extension",
+    imgLink: Summarizer,
+  },
   {
     name: "sortingAlgoVis_name",
     description: "sortingAlgoVis_desc",
@@ -57,13 +67,7 @@ export const PROJECT_DATA_REACTJS = [
     viewLink: "https://github.com/UTKARSHSHARMA718/MonsterNews",
     imgLink: monster,
   },
-  {
-    name: "cloudNoteBook_name",
-    description: "cloudNoteBook_desc",
-    isDescriptionComplete: false,
-    viewLink: "https://cloud-notebook.netlify.app/",
-    imgLink: notebook,
-  },
+
   {
     name: "quizApp_name",
     description: "quizApp_desc",
@@ -91,13 +95,6 @@ export const PROJECT_DATA_REACTJS = [
     isDescriptionComplete: false,
     viewLink: "https://textmanipulator.herokuapp.com/",
     imgLink: textMani,
-  },
-  {
-    name: "holidaysEasy_name",
-    description: "holidaysEasy_desc",
-    isDescriptionComplete: false,
-    viewLink: "https://github.com/UTKARSHSHARMA718/Reservator",
-    imgLink: holidayEasy,
   },
 ];
 
@@ -165,5 +162,39 @@ export const PROJECT_DATA_REACT_NATIVE = [
     isDescriptionComplete: false,
     viewLink: "https://github.com/UTKARSHSHARMA718/CROSS-vs-CIRCLE",
     imgLink: social,
+  },
+];
+
+export const PROJECT_DATA_MERN = [
+  {
+    name: "holidaysEasy_name",
+    description: "holidaysEasy_desc",
+    isDescriptionComplete: false,
+    viewLink: "https://github.com/UTKARSHSHARMA718/Reservator",
+    imgLink: holidayEasy,
+  },
+  {
+    name: "cloudNoteBook_name",
+    description: "cloudNoteBook_desc",
+    isDescriptionComplete: false,
+    viewLink: "https://cloud-notebook.netlify.app/",
+    imgLink: notebook,
+  },
+];
+
+export const PROJECT_DATA_NETXJS = [
+  {
+    name: "netflix_nextjs_name",
+    description: "netflix_nextjs_desc",
+    isDescriptionComplete: false,
+    viewLink: "https://github.com/UTKARSHSHARMA718/Netflix-clone",
+    imgLink: Netflix_NextJs,
+  },
+  {
+    name: "mamba_bookings_name",
+    description: "mamba_bookings_desc",
+    isDescriptionComplete: false,
+    viewLink: "https://github.com/UTKARSHSHARMA718/Mamba-Bookings",
+    imgLink: MambaBookings_NextJs,
   },
 ];

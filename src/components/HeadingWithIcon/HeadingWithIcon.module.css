@@ -1,0 +1,16 @@
+.iconAndHeadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.heading {
+  text-align: center;
+  color: var(--green4);
+  font-weight: bold;
+}
+
+.icon{
+    color: greenyellow;
+}

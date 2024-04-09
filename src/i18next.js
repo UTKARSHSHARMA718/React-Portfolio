@@ -134,6 +134,49 @@ i18n
           socialApp_desc:
             "It's a social media app where user can login/sign-up and then can upload profile pic, post, share its instagram link, and other users could also like the post and to which live count will be reflecting to the user on real time using firebase real-time database funtionality",
           see: "See",
+
+          netflix_nextjs_name: "Netflix",
+          netflix_nextjs_desc:
+            "The Netflix app allows users to stream a wide range of movies, series, and documentaries anytime, anywhere. With personalized recommendations based on viewing history, it offers a seamless viewing experience across different devices. Subscriptions unlock access to a vast library of content.",
+          mamba_bookings_name: "Mamba Bookings",
+          mamba_bookings_desc:
+            "It’s an online marketplace that connects people who want to rent out their property with people are looking for accommodation.",
+
+          smartIndiaHackathon_name: "Smart India hackathon",
+          smartIndiaHackathon_desc: `
+            •Worked on the project named "Kalkirti" which is a cross-platform for both buyers and sellers of Indian handicrafts.
+            • Suggested changes to standard operational and best practices, providing the leadership needed to develop and implement continuous improvements.
+            • Researched, documented and selected alternatives for web architecture or technologies.`,
+          netcamp_name: "NetCamp",
+          netcamp_desc: `
+          • Gained the knowledge of networking and android.
+          • Worked on real world projects like mobile app reponsible for goverment college attendance and exam schedule issues.
+          • Leanred about team collaboration by creating & submitting a major project as an final assessment which includes concepts of networking, built in android and must be scalable.`,
+          unthinkableSolutions_name: "Unthinkable Solutions",
+          unthinkableSolutions_desc: `
+          • Successfully contributed to the development of Nova-dontics, Kirav AI, ICAI CMI&B, and Poshan Tracker projects, showcasing versatility in handling diverse applications.
+          • Adept in utilizing UI frameworks like Ant-design, Material UI, etc for the seamless execution of project tasks, contributing to a 25% reduction in development time across projects.
+          • Demonstrated skills in working on hybrid boilerplate projects (CMIB) involving React Native + React.js, showcasing adaptability and proficiency in diverse leading to a 80% improvement in cross-platform compatibility.
+          • Implemented the page, view, containers, and components architecture approach, ensuring the development of modular and high-performance applications.
+          • Efficiently utilized tools such as Trello, Locomo and other for project management and collaboration and design tools like Figma and Zeplin, enhancing team productivity.
+          • Worked extensively with React maps, React context, React toolkit, React saga, React redux, React Query, Google maps, React drag-n-drop, and React charts, showcasing a comprehensive understanding of the React ecosystem.
+          • Demonstrated proficiency in developing data-intensive applications, particularly in the CMIB Admin project, highlighting the ability to manage complex data processing tasks effectively.
+          • Developed multiple admin panels, showcasing expertise in creating intuitive and user-friendly interfaces for administrative purposes.
+          • Actively engaged in intensive code reviews, emphasizing a commitment to code quality, collaboration, and continuous improvement, leading to a 50% reduction in code defects and increase in overall code quality.
+        `,
+
+          sendMeAnEmail: "Send me an Email",
+          details: "Details",
+          linkedIn: "LinkedIn",
+          personalAddress: "Rakesh Marg, Ghaziabad, Uttar Pradesh",
+          utkarshsharma: "Utkarsh Sharma",
+          blackHolesInfo: `Black holes are physical objects in space, just like
+          everything else we see in the night sky.
+          But they pack so much mass into so small a space
+          that not even light can escape their gravity.`,
+          experienceSection: "Experience Section",
+          mern: "MERN",
+          nextjs: "NextJs",
         },
       },
       hi: {
@@ -243,6 +286,42 @@ i18n
           socialApp_desc:
             "यह एक सोशल मीडिया ऐप है जहां उपयोगकर्ता लॉगिन/साइन-अप कर सकते हैं और फिर प्रोफ़ाइल चित्र, पोस्ट, अपना इंस्टाग्राम लिंक साझा कर सकते हैं, और दूसरे उपयोगकर्ताओं को भी पोस्ट पसंद आ सकती है और जिस पर जितने लोगों की संख्या होगी, उसे उपयोगकर्ता को तत्काल समय पर आईवार की अंदर दिखाया जाएगा जो फ़ायरबेस के वास्तविक समय पेती डेटाबेस की क्षमता का उपयोग करता है।",
           see: "देखना",
+          netflix_nextjs_name: "Netflix",
+          netflix_nextjs_desc:
+            "Netflix ऐप प्रयोक्ताओं को किसी भी समय, कहीं भी विभिन्न डिवाइसों पर विभिन्न प्रकार की फिल्में, सीरीज़ और डॉक्यूमेंट्री स्ट्रीम करने की सुविधा प्रदान करता है। देखने के इतिहास पर आधारित व्यक्तिगत सिफारिशों के साथ, यह विभिन्न उपकरणों पर एक संगत दृश्य अनुभव प्रदान करता है। सदस्यता एक विशाल सामग्री पुस्तकालय का पहुंच अनलॉक करती है।",
+          mamba_bookings_name: "माम्बा बुकिंग्स",
+          mamba_bookings_desc:
+            "यह एक ऑनलाइन बाजार है जो उन लोगों को जो अपनी संपत्ति को किराये पर देना चाहते हैं उन्हें उन लोगों से जो आवास की तलाश में हैं जोड़ता है।",
+          smartIndiaHackathon_name: "स्मार्ट इंडिया हैकाथॉन",
+          smartIndiaHackathon_desc: `
+            • 'कल्कीर्ति' नामक परियोजना पर काम किया जो भारतीय हस्तशिल्पों के खरीदारों और विक्रेताओं के लिए एक संभावित द्वार है। \n • मानक संचालन और सर्वोत्तम प्रथाओं में परिवर्तनों का सुझाव दिया, जो निरंतर सुधारों के विकास और कार्यान्वयन के लिए आवश्यक नेतृत्व प्रदान करता है।
+            • वेब आर्किटेक्चर या टेक्नोलॉजी के लिए विकल्पों की अन्वेषण, दस्तावेजीकरण और चयन किया।`,
+          netcamp_name: "नेटकैंप",
+          netcamp_desc: `
+            • नेटवर्किंग और एंड्रॉयड के बारे में ज्ञान प्राप्त किया। 
+            • सरकारी कॉलेज की उपस्थिति और परीक्षा के अनुसूची समस्याओं के लिए मोबाइल एप्लिकेशन के लिए वास्तविक विश्व परियोजनाओं पर काम किया। 
+            • एक प्रमुख परिक्षण के रूप में टीम में सहयोग द्वारा एक प्रमुख परियोजना बनाकर और सबमिट करके टीम सहयोग के बारे में जाना। जो नेटवर्किंग, एंड्रॉयड में निर्मित होता है और स्कैलेबल होना चाहिए।`,
+          unthinkableSolutions_name: "अविचारणीय समाधान",
+          unthinkableSolutions_desc: `
+          • नोवा-डोंटिक्स, किराव एआई, आईसीएआई सीएमआई एंड बी, और पोषण ट्रैकर परियोजनाओं के विकास में सफलतापूर्वक योगदान दिया, जिसमें विविध अनुप्रयोगों का संचालन करने की विस्तृता प्रदर्शित की। 
+          • यूआई फ्रेमवर्क जैसे एंट-डिज़ाइन, मैटेरियल यूआई आदि का उपयोग करने में प्रवीण, परियोजना कार्यों को संचालन करने के लिए योग्यता दिखाई, जिससे समय की 25% की कमी हुई। 
+          • रियल्टी नेटिव + रीएक्ट.जेएस में हाइब्रिड बॉयलरप्लेट परियोजनाओं (सीएमआईबी) पर काम करने की कौशल्य दिखाई, जिससे विभिन्न परियोजनाओं में संगतता में 80% की सुधार हुई। 
+          • पृष्ठ, दृश्य, कंटेनर और कॉम्पोनेंट्स की आर्किटेक्चर दृष्टिकोण लागू किया, जो एकीकृत और उच्च प्रदर्शन एप्लिकेशनों के विकास को सुनिश्चित करता है। 
+          • प्रोजेक्ट प्रबंधन और सहयोग के लिए ट्रेलो, लोकोमो और अन्य उपकरणों का प्रयोग किया, और फिगमा और जेप्लिन जैसे डिज़ाइन उपकरणों का प्रयोग किया, जो टीम की उत्पादकता को बढ़ावा देता है। 
+          • रियाक्ट मानचित्र, रियाक्ट संदर्भ, रियाक्ट टूलकिट, रियाक्ट सागा, रियाक्ट रीडक्स, रियाक्ट क्वेरी, गूगल मानचित्र, रियाक्ट ड्रैग-एन-ड्रॉप, और रियाक्ट चार्ट्स के साथ बेहद व्यापक ज्ञान दिखाया, जो रियाक्ट पारिस्थितिकी की समग्र समझ का प्रस्ताव करता है। 
+          • डेटा-भरी एप्लिकेशनों के विकास में प्रवीणता का प्रदर्शन किया, विशेष रूप से सीएमआईबी एडमिन परियोजना में, जिससे जटिल डेटा प्रसंस्करण कार्यों को प्रभावी ढंग से प्रबंधित करने की क्षमता को हाइलाइट किया गया। 
+          • बहुत से प्रशासनिक उद्देश्यों के लिए उपयोगकर्ता मित्रपूर्ण और सहज इंटरफेस बनाने की विशेषज्ञता दिखाई दी। 
+          • गहरी कोड समीक्षा में सक्रिय रूप से शामिल होकर, कोड गुणवत्ता, सहयोग और नियमित सुधार के प्रति समर्पण को जोर दिया, जिससे कोड दोषों में 50% की कमी हुई और कुल कोड गुणवत्ता में वृद्धि हुई।`,
+          sendMeAnEmail: "मुझे ईमेल भेजें",
+          details: "विवरण",
+          linkedIn: "लिंक्डइन",
+          personalAddress: "राकेश मार्ग, गाज़ियाबाद, उत्तर प्रदेश",
+          utkarshsharma: "उत्कर्श शर्मा",
+          blackHolesInfo:
+            "काले गड्ढे आकाश में भौतिक वस्तुएँ हैं, जिस तरह रात के आसमान में हम जो भी देखते हैं। लेकिन वे इतनी भारी भोजन को इतनी छोटी जगह में पैक करते हैं कि उनकी गुरुत्वाकर्षण की बाधा को नहीं भी लाइट को भी नहीं भाग सकता।",
+            experienceSection: "अनुभव खंड",
+            mern: "MERN",
+            nextjs: "NextJs",
         },
       },
       man: {
@@ -347,6 +426,41 @@ i18n
           socialApp_desc:
             "这是一个社交媒体应用，用户可以登录/注册，然后可以上传个人资料图片、帖子、分享其Instagram链接，其他用户也可以喜欢帖子，用户实时使用Firebase实时数据库功能反映到用户的喜欢数量。",
           see: "看",
+          netflix_nextjs_name: "Netflix",
+          netflix_nextjs_desc:
+            "Netflix 应用允许用户随时随地在不同设备上流式传输各种电影、系列和纪录片。根据观看历史提供个性化推荐，为用户提供无缝的观影体验。订阅解锁了丰富的内容库。",
+          mamba_bookings_name: "猛獁预订",
+          mamba_bookings_desc:
+            "这是一个在线市场，连接想要出租房产的人和寻找住宿的人。",
+          smartIndiaHackathon_name: "智能印度黑客马拉松",
+          smartIndiaHackathon_desc: `
+            • 参与了名为“Kalkirti”的项目，这是一个连接印度手工艺品买家和卖家的跨平台。
+            • 提出了对标准运营和最佳实践的变更建议，提供了发展和实施持续改进所需的领导力。
+            • 研究、记录和选择了 Web 架构或技术的替代方案。`,
+          netcamp_name: "网络营地",
+          netcamp_desc: `
+            • 获得了网络和安卓方面的知识。
+            • 参与了真实项目，比如负责政府学院出勤和考试时间表问题的移动应用。
+            • 通过创建和提交一个重要项目作为最终评估学习了团队协作，其中包括网络概念、在安卓上构建以及必须具有可伸缩性。`,
+          unthinkableSolutions_name: "不可思议解决方案",
+          unthinkableSolutions_desc: `
+            • 成功参与了 Nova-dontics、Kirav AI、ICAI CMI&B 和 Poshan Tracker 项目的开发，展示了处理不同应用程序的多样性的能力。
+            • 熟练使用 UI 框架，如 Ant-design、Material UI 等，对项目任务的无缝执行做出了贡献，为项目时间节省了 25%。
+            • 展示了在涉及 React Native + React.js 的混合模板项目（CMIB）上工作的技能，显示出对不同领域的适应能力和熟练程度，从而实现了跨平台兼容性的 80% 改善。
+            • 实施了页面、视图、容器和组件架构方法，确保了模块化和高性能应用程序的开发。
+            • 高效地利用了 Trello、Locomo 等工具进行项目管理和协作，以及 Figma 和 Zeplin 等设计工具，提高了团队的生产力。
+            • 广泛使用了 React 地图、React 上下文、React 工具包、React saga、React redux、React Query、Google 地图、React 拖放以及 React 图表，展示了对 React 生态系统的全面理解。• 展示了在开发数据密集型应用程序方面的熟练程度，特别是在 CMIB 管理项目中，突出显示了有效管理复杂数据处理任务的能力。
+            • 开发了多个管理面板，展示了为管理目的创建直观和用户友好界面的专业技能。• 积极参与了深度代码审查，强调了对代码质量、协作和持续改进的承诺，从而导致代码缺陷减少 50%，整体代码质量提高。`,
+          sendMeAnEmail: "发送邮件给我",
+          details: "详细信息",
+          linkedIn: "领英",
+          personalAddress: "Rakesh街，加济阿巴德，北方邦",
+          utkarshsharma: "Utkarsh Sharma",
+          blackHolesInfo:
+            "黑洞是空间中的物理对象，就像我们在夜空中看到的一切其他东西一样。 但它们将如此大量的质量压缩到如此小的空间中，以至于甚至光线也无法逃脱它们的引力。",
+            experienceSection: "经验部分",
+            mern: "MERN",
+            nextjs: "NextJs",
         },
       },
       sp: {
@@ -457,6 +571,41 @@ i18n
           socialApp_desc:
             "Es una aplicación de redes sociales donde los usuarios pueden iniciar sesión/registrarse y luego pueden cargar una foto de perfil, publicar, compartir su enlace de Instagram, y otros usuarios también pueden dar me gusta a la publicación y a cuál reflejará el recuento en vivo al usuario en tiempo real utilizando la funcionalidad de base de datos en tiempo real de Firebase.",
           see: "Ver",
+
+          netflix_nextjs_name: "Netflix",
+          netflix_nextjs_desc:
+            "La aplicación de Netflix permite a los usuarios ver una amplia gama de películas, series y documentales en cualquier momento y lugar. Con recomendaciones personalizadas basadas en el historial de visualización, ofrece una experiencia de visualización perfecta en diferentes dispositivos. Las suscripciones desbloquean acceso a una vasta biblioteca de contenido.",
+          mamba_bookings_name: "Reservas Mamba",
+          mamba_bookings_desc:
+            "Es un mercado en línea que conecta a personas que desean alquilar su propiedad con personas que buscan alojamiento.",
+          smartIndiaHackathon_name: "Smart India Hackathon",
+          smartIndiaHackathon_desc: `• Trabajé en el proyecto llamado 'Kalkirti', que es una plataforma cruzada para compradores y vendedores de artesanías indias. 
+            • Sugirió cambios a las prácticas operativas estándar y las mejores prácticas, brindando el liderazgo necesario para desarrollar e implementar mejoras continuas. 
+            • Investigó, documentó y seleccionó alternativas para la arquitectura o tecnologías web.`,
+          netcamp_name: "NetCamp",
+          netcamp_desc: `• Adquirí conocimientos sobre redes y Android. 
+            • Trabajé en proyectos del mundo real como una aplicación móvil responsable de problemas de asistencia y horario de exámenes en colegios gubernamentales. 
+            • Aprendí sobre la colaboración en equipo creando y presentando un proyecto importante como evaluación final, que incluye conceptos de redes, construido en Android y debe ser escalable.`,
+          unthinkableSolutions_name: "Soluciones Inimaginables",
+          unthinkableSolutions_desc: `• Contribuí con éxito al desarrollo de los proyectos Nova-dontics, Kirav AI, ICAI CMI&B y Poshan Tracker, demostrando versatilidad en el manejo de aplicaciones diversas. 
+            • Experto en utilizar frameworks de UI como Ant-design, Material UI, etc. para la ejecución perfecta de tareas de proyectos, contribuyendo a una reducción del 25% en el tiempo de desarrollo en todos los proyectos. 
+            • Demostré habilidades para trabajar en proyectos de plantillas híbridas (CMIB) que involucran React Native + React.js, mostrando adaptabilidad y competencia en diversos aspectos, lo que llevó a una mejora del 80% en la compatibilidad entre plataformas. 
+            • Implementé el enfoque de arquitectura de página, vista, contenedores y componentes, asegurando el desarrollo de aplicaciones modulares y de alto rendimiento. 
+            • Utilicé eficientemente herramientas como Trello, Locomo y otras para la gestión de proyectos y la colaboración, y herramientas de diseño como Figma y Zeplin, mejorando la productividad del equipo. 
+            • Trabajé extensamente con mapas React, contexto React, React toolkit, React saga, React redux, React Query, mapas de Google, arrastrar y soltar de React, y gráficos de React, demostrando una comprensión integral del ecosistema de React. 
+            • Demostré competencia en el desarrollo de aplicaciones intensivas en datos, particularmente en el proyecto CMIB Admin, destacando la capacidad de manejar tareas de procesamiento de datos complejas de manera efectiva. 
+            • Desarrollé múltiples paneles de administración, mostrando experiencia en la creación de interfaces intuitivas y amigables para los usuarios con fines administrativos. 
+            • Participé activamente en revisiones de código intensivas, enfatizando un compromiso con la calidad del código, la colaboración y la mejora continua, lo que llevó a una reducción del 50% en defectos de código y un aumento en la calidad general del código.`,
+          sendMeAnEmail: "Envíame un correo electrónico",
+          details: "Detalles",
+          linkedIn: "LinkedIn",
+          personalAddress: "Calle Rakesh, Ghaziabad, Uttar Pradesh",
+          utkarshsharma: "Utkarsh Sharma",
+          blackHolesInfo:
+            "Los agujeros negros son objetos físicos en el espacio, al igual que todo lo demás que vemos en el cielo nocturno. Pero tienen tanta masa concentrada en un espacio tan pequeño que ni siquiera la luz puede escapar de su gravedad.",
+            experienceSection: "Sección de Experiencia",
+            mern: "MERN",
+            nextjs: "NextJs",
         },
       },
     },

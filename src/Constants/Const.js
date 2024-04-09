@@ -1,4 +1,12 @@
-import { ABOUT, BLOGS, BOOKS, HOME, RESUME, WORK } from "./routeNames";
+import {
+  ABOUT,
+  BLOGS,
+  BOOKS,
+  CONTACT_ME,
+  HOME,
+  RESUME,
+  WORK,
+} from "./routeNames";
 import {
   faGithub,
   faTwitter,
@@ -6,6 +14,14 @@ import {
   faLinkedin,
   faHashnode,
 } from "@fortawesome/free-brands-svg-icons";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiNextdotjs } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { SiPreact } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+import { FaAddressCard } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 // Social profile links
 export const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/iking7sharma/";
@@ -203,6 +219,10 @@ export const NAV_LINKS = [
     text: "about",
     to: ABOUT,
   },
+  {
+    text: "contact",
+    to: CONTACT_ME,
+  },
 ];
 
 export const SOCIAL_ICONS = [
@@ -240,3 +260,54 @@ export const LANGUAGES = [
 ];
 
 export const LANGUAGE = "i18nextLng";
+
+export const PROJECTS_SIDEBAR = [
+  { label: "Javascript", icon: IoLogoJavascript },
+  { label: "React JS", icon: FaReact },
+  { label: "React Native", icon: SiPreact },
+  { label: "Node Js", icon: FaNode },
+  { label: "Next JS", icon: SiNextdotjs },
+];
+
+export const EXPERIENCE_DATA = [
+  {
+    title: "smartIndiaHackathon_name",
+    description: "smartIndiaHackathon_desc",
+    image: "https://im.rediff.com/news/2016/dec/26smart-india.jpg",
+    date: "4-2022 to 7-2022",
+  },
+  {
+    title: "netcamp_name",
+    description: "netcamp_desc",
+    image:
+      "https://scontent.fdel1-5.fna.fbcdn.net/v/t39.30808-6/306827579_531585492106722_3857632399378417624_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LHrleVp2OooAb5y37KJ&_nc_ht=scontent.fdel1-5.fna&oh=00_AfDqkAgZCikBfoqo9LzHdFNonCJ_rGZYbGDkdw0k5Krpkg&oe=661A103A",
+    date: "8-2022 to 9-2022",
+  },
+  {
+    title: "unthinkableSolutions_name",
+    description: "unthinkableSolutions_desc",
+    image:
+      "https://media.licdn.com/dms/image/C4E0BAQEawcpuMBGTFg/company-logo_200_200/0/1630636440658/unthinkable_software_logo?e=1720656000&v=beta&t=3fZXK51Jy0du9ePEGzP1Om8zbGhOQa9h58kOhaMVuEo",
+    date: "4-2023 to 2-2024",
+  },
+];
+
+export const CONTACT_DETAILS = [
+  {
+    label: "email",
+    value: "utkarsh79sharma@gmail.com",
+    isEmail: true,
+    icon: MdEmail,
+  },
+  {
+    label: "address",
+    value: "personalAddress",
+    icon: FaAddressCard,
+  },
+  {
+    label: "linkedIn",
+    value: "utkarshsharma",
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/utkarsh-sharma-98860520a/",
+  },
+];

@@ -1,0 +1,123 @@
+.container {
+  padding: 0px 50px;
+  width: 50%;
+  position: relative;
+  /* animation */
+  animation: make_container_move 1s linear forwards;
+}
+
+@keyframes make_container_move {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--black3);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: greenyellow;
+}
+
+.desc {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+  color: white;
+}
+
+.img {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  z-index: 12;
+  padding: 2px;
+  background-color: greenyellow;
+}
+
+.imge__left {
+  right: -20px;
+}
+
+.imge__right {
+  left: -20px;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.imgAndTitleContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: slategrey;
+  width: 100%;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.left__card {
+  left: 0;
+}
+
+.right__card {
+  left: 50%;
+}
+
+.left__arrow {
+  position: absolute;
+  top: 12px;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+  /* CSS for creating a tricangle */
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid greenyellow;
+  right: 35px;
+}
+
+.right__arrow {
+  position: absolute;
+  top: 12px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+  /* CSS for creating a tricangle */
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid greenyellow;
+  left: 35px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  .container{
+    width: 100%;
+    padding-right: 0px;
+  }
+  .imgAndTitleContainer{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

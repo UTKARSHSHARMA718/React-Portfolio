@@ -6,11 +6,11 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import TiltEffectContainer from "../../components/TiltEffectContainer/TiltEffectContainer";
 import styles from "./ProjectContainer.module.css";
 
-const ProjectContainer = ({ data, title }) => {
+const ProjectContainer = React.forwardRef(({ data, title }, ref) => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.backgroundStylesContainer}>
+    <div className={styles.backgroundStylesContainer} {...{ref}}>
       <div className={styles["projects-container"]}>
         <div className={styles.headingContainer}>
           <h2
@@ -43,7 +43,7 @@ const ProjectContainer = ({ data, title }) => {
       </div>
     </div>
   );
-};
+});
 
 ProjectContainer.defaultProps = {
   data: [],

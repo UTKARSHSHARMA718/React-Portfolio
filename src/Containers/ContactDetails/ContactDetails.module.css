@@ -1,0 +1,26 @@
+.parentContainer {
+  background-color: var(--black3);
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--black3);
+}
+
+.iconColor{
+  color: greenyellow;
+}
+
+@media (max-width: 768px) {
+  .parentContainer{
+    padding: 16px;
+  }
+}

@@ -1,19 +1,12 @@
-form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--width_30rem);
-  color: var(--white1);
-  margin-bottom: var(--margin_5rem);
-  padding: var(--padding_24);
-}
-
 .formContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--gap_16);
   background-color: var(--black3);
   border-radius: 12px;
+  color: var(--white1);
+  padding: var(--padding_24);
 }
 
 .form-group {
@@ -37,4 +30,32 @@ form {
 .textArea {
   width: var(--fullWidth);
   padding: var(--padding_8);
+}
+
+.inputFieldSContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.nameAndEmailContainer{
+  width: 50%;
+}
+
+.btn{
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .inputFieldSContainer{
+    flex-direction: column;
+  }
+  .nameAndEmailContainer{
+    width: 100%;
+  }
+  .formContainer{
+    padding: 8px;
+  }
+  .btn{
+    width: fit-content;
+  }
 }

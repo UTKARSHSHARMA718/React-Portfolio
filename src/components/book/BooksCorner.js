@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Particles from "react-tsparticles";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { TbBooks } from "react-icons/tb";
 
 import BooksCard from "../BooksCard/BooksCard";
+import HeadingWithIcon from "../HeadingWithIcon/HeadingWithIcon";
 import SearchBar from "../SearchBar/SearchBar";
+import withParticals from "../../HOC/withParticals/withParticals";
 import { filterData } from "../../utils/util";
 import { booksData } from "../../Constants/BooksData";
 import { BOOK_SEARCH_QUERY } from "../../Constants/Const";
 import { BOOKS, DETAILS } from "../../Constants/routeNames";
 import "./Books.css";
 
-const Books = (props) => {
+const Books = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -56,45 +57,32 @@ const Books = (props) => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
-    >
-      <div className="container">
-        <h1>{t("books_corner")}</h1>
-        <div className="searchAndBooksContainer">
-          <div className="searchContainer">
-            <SearchBar
-              value={searchValue}
-              placeholder={t("placeholder_books_search")}
-              onChange={handleOnUserSearch}
-            />
-          </div>
-          <div className="booksContainer">
-            {allBooks.map((book) => {
-              return (
-                // TODO: below modal is not properly styles for image with text case
-                <BooksCard
-                  showOnHover={book?.name}
-                  key={book?.imageUrl}
-                  imageUrl={book?.imageUrl}
-                  onClick={() => handleOnBookInfo(book.name)}
-                />
-              );
-            })}
-          </div>
+    <div className="container">
+      <HeadingWithIcon heading={t("books_corner")} icon={TbBooks} />
+      <div className="searchAndBooksContainer">
+        <div className="searchContainer">
+          <SearchBar
+            value={searchValue}
+            placeholder={t("placeholder_books_search")}
+            onChange={handleOnUserSearch}
+          />
+        </div>
+        <div className="booksContainer">
+          {allBooks.map((book) => {
+            return (
+              // TODO: below modal is not properly styles for image with text case
+              <BooksCard
+                showOnHover={book?.name}
+                key={book?.imageUrl}
+                imageUrl={book?.imageUrl}
+                onClick={() => handleOnBookInfo(book.name)}
+              />
+            );
+          })}
         </div>
       </div>
-      <Particles
-        id="tsparticles"
-        init={props?.particlesInit}
-        loaded={props?.particlesLoaded}
-        options={props?.particlesOptions}
-      />
-    </motion.div>
+    </div>
   );
 };
 
-export default Books;
+export default withParticals(Books);
