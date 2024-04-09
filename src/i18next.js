@@ -324,7 +324,7 @@ i18n
             "काले गड्ढे आकाश में भौतिक वस्तुएँ हैं, जिस तरह रात के आसमान में हम जो भी देखते हैं। लेकिन वे इतनी भारी भोजन को इतनी छोटी जगह में पैक करते हैं कि उनकी गुरुत्वाकर्षण की बाधा को नहीं भी लाइट को भी नहीं भाग सकता।",
           experienceSection: "अनुभव खंड",
           mern: "MERN",
-          nextjs: "NextJs",
+          nextjs: "अगला जे.एस",
           summarizer_name: "सारांशकर्ता",
           summarizer_desc:
             "विकसित किया एक सुविधा जिससे उपयोगकर्ता वेब पेजों या विशिष्ट पाठ सामग्री से सारांश/मुख्य बिंदुओं को उत्पन्न कर सकते हैं।",
@@ -461,12 +461,12 @@ i18n
           details: "详细信息",
           linkedIn: "领英",
           personalAddress: "Rakesh街，加济阿巴德，北方邦",
-          utkarshsharma: "Utkarsh Sharma",
+          utkarshsharma: "烏特卡什·夏爾馬",
           blackHolesInfo:
             "黑洞是空间中的物理对象，就像我们在夜空中看到的一切其他东西一样。 但它们将如此大量的质量压缩到如此小的空间中，以至于甚至光线也无法逃脱它们的引力。",
           experienceSection: "经验部分",
-          mern: "MERN",
-          nextjs: "NextJs",
+          mern: "默恩",
+          nextjs: "下一個js",
           summarizer_name: "摘要生成器",
           summarizer_desc:
             "开发了一个功能，使用户能够从网页或特定文本内容中生成摘要/提取主要要点。",
@@ -495,7 +495,6 @@ i18n
           enter: "Entrar",
           email_helper_info:
             "Nunca compartiremos tu correo electrónico con nadie más",
-
           me: "Yo",
           contact: "Contacto",
           programming: "Programación",
@@ -614,7 +613,7 @@ i18n
             "Los agujeros negros son objetos físicos en el espacio, al igual que todo lo demás que vemos en el cielo nocturno. Pero tienen tanta masa concentrada en un espacio tan pequeño que ni siquiera la luz puede escapar de su gravedad.",
           experienceSection: "Sección de Experiencia",
           mern: "MERN",
-          nextjs: "NextJs",
+          nextjs: "siguiente js",
           summarizer_name: "Resumen",
           summarizer_desc:
             "Desarrolló una característica que permite a los usuarios generar resúmenes/extracciones de puntos principales de páginas web o contenido de texto específico.",
