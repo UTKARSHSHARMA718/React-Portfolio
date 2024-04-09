@@ -130,14 +130,14 @@ h1 {
 
 @media (max-width: 1500px) {
   .sidebar {
-    bottom: 20px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     top: unset;
     right: unset;
     flex-direction: row;
     gap: 16px;
-    z-index: 99;
+    z-index: 10;
     background-color:green
   }
 
