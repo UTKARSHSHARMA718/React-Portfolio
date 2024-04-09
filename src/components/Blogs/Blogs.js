@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Particles from "react-tsparticles";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { TbWriting } from "react-icons/tb";
 
 import BlogCard from "../BlogCard/BlogCard";
 import CustomLoader from "../CustomLoader/CustomLoader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import HeadingWithIcon from "../HeadingWithIcon/HeadingWithIcon";
 import TiltEffectContainer from "../TiltEffectContainer/TiltEffectContainer";
+import withParticals from "../../HOC/withParticals/withParticals";
 import {
   BLOGS_END_POINT,
   ERROR_OCCURED,
@@ -82,21 +83,17 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
-      className={styles["blogsDialog"]}
-    >
+    <>
       {!isLoading && !error && (
         <>
-          <h1 className={styles["heading"]}>
-            {t("my")} {t("blogs")}
-          </h1>
+          <HeadingWithIcon heading={`${t("my")} ${t("blogs")}`} icon={TbWriting}/>
           <div className={styles["blogs-container"]}>
             {data?.map((post, index) => (
-              <TiltEffectContainer key={index} href={`${BLOGS_END_POINT}${post?.node?.slug}`} isLink>
+              <TiltEffectContainer
+                key={index}
+                href={`${BLOGS_END_POINT}${post?.node?.slug}`}
+                isLink
+              >
                 <BlogCard post={post?.node} />
               </TiltEffectContainer>
             ))}
@@ -111,14 +108,8 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
           onBtnClick={fetchData}
         />
       )}
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={particlesOptions}
-      />
-    </motion.div>
+    </>
   );
 };
 
-export default Blogs;
+export default withParticals(Blogs);

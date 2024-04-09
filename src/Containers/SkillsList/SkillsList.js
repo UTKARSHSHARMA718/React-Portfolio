@@ -11,7 +11,7 @@ const SkillsList = ({
 
   return (
     <div>
-      <h3 className={styles.heading}>{heading}</h3>
+      <h2 className={styles.heading}>{heading}</h2>
       <div className={styles.skills}>
         <div className={styles.PS}>
           <ul>

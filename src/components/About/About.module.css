@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Yeseva+One&display=swap");
 
-.parentContainer{
+.parentContainer {
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -47,12 +47,6 @@
   vertical-align: top;
   color: var(--yellow1);
   font-weight: 500;
-}
-
-.heading {
-  text-align: center;
-  color: var(--green4);
-  font-weight: bold;
 }
 
 .skills {

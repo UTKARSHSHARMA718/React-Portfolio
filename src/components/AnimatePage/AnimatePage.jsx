@@ -6,6 +6,7 @@ import { loadFull } from "tsparticles";
 import About from "../About/About";
 import Blogs from "../Blogs/Blogs";
 import Books from "../book/BooksCorner";
+import ContactMe from "../../Containers/ContactMe/ContactMe";
 import Front from "../Front/Front";
 import Work from "../Work/Work";
 import Resume from "../resume/Resume";
@@ -16,6 +17,7 @@ import {
   ABOUT,
   BLOGS,
   BOOKS,
+  CONTACT_ME,
   DETAILS,
   HOME,
   RESUME,
@@ -30,6 +32,7 @@ const particlesLoaded = (container) => {};
 
 function AnimatePage() {
   const location = useLocation();
+
   return (
     <AnimatePresence>
       <Routes location={location} key={location.path}>
@@ -82,6 +85,13 @@ function AnimatePage() {
           path={RESUME}
           element={
             <Resume {...{ particlesInit, particlesLoaded, particlesOptions }} />
+          }
+        />
+        <Route
+          exact
+          path={CONTACT_ME}
+          element={
+            <ContactMe {...{ particlesInit, particlesLoaded, particlesOptions }} />
           }
         />
       </Routes>
