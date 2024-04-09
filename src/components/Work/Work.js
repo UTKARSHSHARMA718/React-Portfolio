@@ -6,14 +6,8 @@ import { GrUserWorker } from "react-icons/gr";
 import HeadingWithIcon from "../HeadingWithIcon/HeadingWithIcon";
 import ProjectContainer from "../../Containers/ProjectContainer/ProjectContainer";
 import ToolTip from "../ToolTip/ToolTip";
+import { PROJECTS_DETAILS } from "../../Constants/ProjectsData";
 import { PROJECTS_SIDEBAR } from "../../Constants/Const";
-import {
-  PROJECT_DATA_HTML_CSS_JAVASCRIPT,
-  PROJECT_DATA_MERN,
-  PROJECT_DATA_NETXJS,
-  PROJECT_DATA_REACTJS,
-  PROJECT_DATA_REACT_NATIVE,
-} from "../../Constants/ProjectsData";
 import styles from "./Work.module.css";
 
 const Work = (props) => {
@@ -30,31 +24,15 @@ const Work = (props) => {
       </div>
       <div className={styles.sidebarAndContentContainer}>
         <div className={styles.projectsGroupContainer}>
-          <ProjectContainer
-            ref={(refValue) => (refArr.current[0] = refValue)}
-            title={t("html_css_javascript")}
-            data={PROJECT_DATA_HTML_CSS_JAVASCRIPT}
-          />
-          <ProjectContainer
-            ref={(refValue) => (refArr.current[1] = refValue)}
-            title={t("reactjs")}
-            data={PROJECT_DATA_REACTJS}
-          />
-          <ProjectContainer
-            ref={(refValue) => (refArr.current[2] = refValue)}
-            title={t("react_native")}
-            data={PROJECT_DATA_REACT_NATIVE}
-          />
-          <ProjectContainer
-            ref={(refValue) => (refArr.current[3] = refValue)}
-            title={t("mern")}
-            data={PROJECT_DATA_MERN}
-          />
-          <ProjectContainer
-            ref={(refValue) => (refArr.current[4] = refValue)}
-            title={t("nextjs")}
-            data={PROJECT_DATA_NETXJS}
-          />
+          {PROJECTS_DETAILS?.map((item, index) => {
+            return (
+              <ProjectContainer
+                ref={(refValue) => (refArr.current[index] = refValue)}
+                title={t(item?.title)}
+                data={item?.data}
+              />
+            );
+          })}
           <Particles
             id="tsparticles"
             init={props.particlesInit}

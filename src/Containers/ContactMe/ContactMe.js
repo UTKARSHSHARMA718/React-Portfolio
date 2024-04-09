@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import ContactDetails from "../ContactDetails/ContactDetails";
 import ContactForm from "../ContactForm/ContactForm";
@@ -6,7 +7,6 @@ import withParticals from "../../HOC/withParticals/withParticals";
 import useWindowDimension from "../../customHooks/useWindowDimensions";
 import BlackHole from "../../Assets/Images/black_hole-removebg-preview.png";
 import styles from "./ContactMe.module.css";
-import { useTranslation } from "react-i18next";
 
 const ContactMe = () => {
   const {t} = useTranslation();
