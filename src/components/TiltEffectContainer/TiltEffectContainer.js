@@ -8,7 +8,7 @@ const TiltEffectContainer = ({ children, onClick, isLink = false, href }) => {
   const bodyContent = (
     <div className={styles.tiltBoxWrap} {...{ onClick }}>
       {new Array(numberOfBoxes)?.fill(1)?.map((item, index) => {
-        return <span key={index} class={styles.tOver}></span>;
+        return <span key={index} className={styles.tOver}></span>;
       })}
       <div className={styles.tiltBox}>{children}</div>
     </div>
