@@ -9,7 +9,6 @@ import withParticals from "../../HOC/withParticals/withParticals";
 import useFetch from "../../customHooks/useFetch";
 import { getValueFromBooksData } from "../../utils/util";
 import { ReactComponent as LeftArrow } from "../../Assets/Images/svgs/left-arrow.svg";
-import { booksApiKey, GOOGLE_BOOKS_API_END_POINT } from "../../Constants/Const";
 import { BOOKS } from "../../Constants/routeNames";
 import "./bookinfo.css";
 
@@ -28,10 +27,10 @@ const BooksInfo = () => {
   });
 
   const urlToGetBookData =
-    GOOGLE_BOOKS_API_END_POINT +
+    process.env.REACT_APP_GOOGLE_BOOKS_END_POINTS +"?q=" +
     name +
     "&download=epub&key=" +
-    booksApiKey +
+    process.env.REACT_APP_GOOGLE_API_KEY +
     "&maxResults=1";
   const { isLoading, error, fetchData, data } = useFetch({
     shouldPreventFetchWhileInitialRender: true,
