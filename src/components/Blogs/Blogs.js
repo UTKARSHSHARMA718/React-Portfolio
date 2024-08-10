@@ -45,7 +45,6 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
   const [error, setError] = useState("");
 
   // TODO: use useFetch hook here
-  console.log({hh: process.env.REACT_APP_HASHNODE_END_POINT})
   const fetchData = async () => {
     setIsLoading(true);
     setError("");
