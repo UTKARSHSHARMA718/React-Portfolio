@@ -1,7 +1,6 @@
 import React from "react";
 
 import ToolTip from "../ToolTip/ToolTip";
-import { BLOGS_END_POINT } from "../../Constants/Const";
 import { getTrimmedText } from "../../utils/util";
 import styles from "./BlogCardStyles.module.css";
 
@@ -10,7 +9,7 @@ const BlogCard = ({ post }) => {
   const url = coverImage?.url || "";
 
   return (
-    <a href={`${BLOGS_END_POINT}${slug}`} className={styles.parentContainer}>
+    <a href={`${process.env.REACT_APP_BLOGS_END_POINT}${slug}`} className={styles.parentContainer}>
       <div className={styles["card"]}>
         <div className={styles["imgCard"]}>
           <img src={url} className={styles["images"]} alt="blogs-image" />

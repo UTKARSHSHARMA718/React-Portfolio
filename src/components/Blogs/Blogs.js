@@ -9,10 +9,8 @@ import HeadingWithIcon from "../HeadingWithIcon/HeadingWithIcon";
 import TiltEffectContainer from "../TiltEffectContainer/TiltEffectContainer";
 import withParticals from "../../HOC/withParticals/withParticals";
 import {
-  BLOGS_END_POINT,
   ERROR_OCCURED,
   GENERAL_ERROR_TEXT,
-  HASHNODE_API,
 } from "../../Constants/Const";
 import styles from "./Blogs.module.css";
 
@@ -47,11 +45,12 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
   const [error, setError] = useState("");
 
   // TODO: use useFetch hook here
+  console.log({hh: process.env.REACT_APP_HASHNODE_END_POINT})
   const fetchData = async () => {
     setIsLoading(true);
     setError("");
     try {
-      const res = await fetch(HASHNODE_API, {
+      const res = await fetch(process.env.REACT_APP_HASHNODE_END_POINT, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -91,7 +90,7 @@ const Blogs = ({ particlesOptions, particlesLoaded, particlesInit }) => {
             {data?.map((post, index) => (
               <TiltEffectContainer
                 key={index}
-                href={`${BLOGS_END_POINT}${post?.node?.slug}`}
+                href={`${process.env.REACT_APP_BLOGS_END_POINT}${post?.node?.slug}`}
                 isLink
               >
                 <BlogCard post={post?.node} />

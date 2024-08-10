@@ -23,29 +23,6 @@ import { MdEmail } from "react-icons/md";
 import { FaAddressCard } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-// Social profile links
-export const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/iking7sharma/";
-export const GTIHUB_PROFILE_URL = "https://github.com/UTKARSHSHARMA718";
-export const HASHNODE_PROFILE_URL = "https://hashnode.com/@Utkarsh-sharma";
-export const LINKEDIN_PROFILE_URL =
-  "https://www.linkedin.com/in/utkarsh-sharma-98860520a?challengeId=AQEWdq3hUo66hAAAAYBPQuu6IBFiHYRT63JuuQSAgMLCzVIbqD5btcHpAyWOGbg-gbW_gCT62OlhRxA7WolDOr-erphVDH9zZw&submissionId=7db529c6-6e19-e816-fd26-5434f8d05a22&original_referer=";
-export const TWITTER_PROFILE_URL =
-  "https://twitter.com/learningbeing18?t=HHau01-onE590wY8CGArIw&s=09";
-
-//API
-// export const HASHNODE_API = "https://api.hashnode.com/";
-export const HASHNODE_API = "https://gql.hashnode.com/";
-
-export const apiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U";
-
-export const GOOGLE_BOOKS_API_END_POINT =
-  "https://www.googleapis.com/books/v1/volumes?q=";
-
-// export const booksApiKey = "AIzaSyCUbECFMXyTKSFvtgu-S5OIbestJRc8d4U"; // older but valid API key
-export const booksApiKey = "AIzaSyCMhVladzH31_JDJNQUzcwY6T-fm4y9buk";
-
-export const BLOGS_END_POINT = "https://supercomputing.hashnode.dev/";
-
 //General text
 export const GENERAL_ERROR_TEXT = "Something went wrong!";
 export const ERROR_OCCURED = "Error Occurred";
@@ -228,13 +205,13 @@ export const NAV_LINKS = [
 export const SOCIAL_ICONS = [
   {
     label: "Github",
-    href: GTIHUB_PROFILE_URL,
+    href: process.env.REACT_APP_GTIHUB_PROFILE_URL,
     icon: faGithub,
   },
-  { href: TWITTER_PROFILE_URL, icon: faTwitter, label: "Twitter" },
-  { href: LINKEDIN_PROFILE_URL, icon: faLinkedin, label: "LinkedIn" },
-  { href: HASHNODE_PROFILE_URL, icon: faHashnode, label: "Hashnode" },
-  { href: INSTAGRAM_PROFILE_URL, icon: faInstagram, label: "Instagram" },
+  { href: process.env.REACT_APP_TWITTER_PROFILE_URL, icon: faTwitter, label: "Twitter" },
+  { href: process.env.REACT_APP_LINKEDIN_PROFILE_URL, icon: faLinkedin, label: "LinkedIn" },
+  { href: process.env.REACT_APP_HASHNODE_PROFILE_URL, icon: faHashnode, label: "Hashnode" },
+  { href: process.env.REACT_APP_INSTAGRAM_PROFILE_URL , icon: faInstagram, label: "Instagram" },
   // { href: GTIHUB_PROFILE_URL, icon: faYoutube }, // might be needed later
 ];
 
