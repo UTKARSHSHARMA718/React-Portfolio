@@ -7,13 +7,13 @@ import { EXPERIENCE_DATA } from "../../Constants/Const";
 import styles from "./ExperienceSection.module.css";
 
 const ExperienceSection = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { windowSize } = useWindowDimension();
   const isMobileScreen = windowSize?.width <= 1024;
 
   return (
     <div className={styles.parentContainer}>
-      <h2>{t('experienceSection')}</h2>
+      <h2>{t("experienceSection")}</h2>
       <div className={styles.container}>
         {EXPERIENCE_DATA?.map((expreince, index) => {
           return (

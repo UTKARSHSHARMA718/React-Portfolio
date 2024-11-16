@@ -257,7 +257,7 @@ export const EXPERIENCE_DATA = [
     title: "netcamp_name",
     description: "netcamp_desc",
     image:
-      "https://scontent.fdel1-5.fna.fbcdn.net/v/t39.30808-6/306827579_531585492106722_3857632399378417624_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LHrleVp2OooAb5y37KJ&_nc_ht=scontent.fdel1-5.fna&oh=00_AfDqkAgZCikBfoqo9LzHdFNonCJ_rGZYbGDkdw0k5Krpkg&oe=661A103A",
+      "https://th.bing.com/th/id/R.0c78ba74f61b7195124e160cb6e13c27?rik=cFZwhiBKkkKdow&riu=http%3a%2f%2fwww.netcamp.in%2fapplication%2fassets%2fimg%2fnetcamp-logo.jpg&ehk=%2fQ0oVz3MWoAP3AfP%2fEsPdUDRmUmhlGgU6ybAb2u%2faUw%3d&risl=&pid=ImgRaw&r=0",
     date: "8-2022 to 9-2022",
   },
   {

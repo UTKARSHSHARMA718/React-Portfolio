@@ -32,7 +32,11 @@ const ExperienceCard = ({
         <div className={styles.imgAndTitleContainer}>
           <img
             src={image}
-            alt="experience-image"
+            alt="experience"
+            onError={({ currentTarget }) => {
+              currentTarget.onerror = null; // prevents looping
+              currentTarget.src="https://i2.pngimg.me/thumb/f/720/m2i8d3i8N4d3N4K9.jpg";
+            }}
             className={[
               styles.img,
               isRight ? styles.imge__right : styles.imge__left,
